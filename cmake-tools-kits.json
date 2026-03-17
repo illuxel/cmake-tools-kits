@@ -151,7 +151,7 @@
     "isTrusted": true,
     "visualStudio": "68e8925c",
     "visualStudioArchitecture": "x86",
-    "toolchainFile": "${env:QT5_PATH}/msvc2019/lib/cmake/Qt5/Qt5Config.cmake",
+    "toolchainFile": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
     "preferredGenerator": {
       "name": "Visual Studio 18 2026",
       "platform": "x86"
@@ -160,7 +160,10 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "PATH": "${env:QT5_PATH}/msvc2019/bin;${env:PATH}",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "QT5_TOOLCHAIN": "msvc2019",
+      "PATH": "${env:QT5_PATH}/msvc2019/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
     }
   },
@@ -169,7 +172,7 @@
     "isTrusted": true,
     "visualStudio": "68e8925c",
     "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:QT5_PATH}/msvc2019_64/lib/cmake/Qt5/Qt5Config.cmake",
+    "toolchainFile": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
     "preferredGenerator": {
       "name": "Visual Studio 18 2026",
       "platform": "x64"
@@ -178,52 +181,10 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "FFMPEG_PATH":"${env:FFMPEG_X64_PATH}",
-      "PATH": "${env:QT5_PATH}/msvc2019_64/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "QT5_TOOLCHAIN": "msvc2019_64",
       "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
-      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
-    }
-  },
-  {
-    "name": "qt5-latest-clang_x86",
-    "isTrusted": true,
-    "visualStudio": "68e8925c",
-    "visualStudioArchitecture": "x86",
-    "toolchainFile": "${env:QT5_PATH}/msvc2019/lib/cmake/Qt5/Qt5Config.cmake",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
-    "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
-    },
-    "cmakeSettings": {
-      "QT_QML_GENERATE_QMLLS_INI": "ON"
-    },
-    "environmentVariables": {
-      "PATH": "${env:QT5_PATH}/msvc2019/bin;${env:PATH}",
-      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
-    }
-  },
-  {
-    "name": "qt5-latest-clang-x86_64",
-    "isTrusted": true,
-    "visualStudio": "68e8925c",
-    "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:QT5_PATH}/msvc2019_64/lib/cmake/Qt5/Qt5Config.cmake",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
-    "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
-    },
-    "cmakeSettings": {
-      "QT_QML_GENERATE_QMLLS_INI": "ON"
-    },
-    "environmentVariables": {
-      "PATH": "${env:QT5_PATH}/msvc2019_64/bin;${env:FFMPEG_X64_PATH}/bin;${env:PATH}",
-      "PKG_CONFIG_PATH": "${env:FFMPEG_X64_PATH}/lib/pkgconfig",
+      "PATH": "${env:QT5_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
     }
   },
@@ -232,7 +193,7 @@
     "isTrusted": true,
     "visualStudio": "68e8925c",
     "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:QT5_PATH}/msvc2019_64/lib/cmake/Qt5/Qt5Config.cmake",
+    "toolchainFile": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
     "preferredGenerator": {
       "name": "Ninja"
     },
@@ -244,15 +205,64 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "PATH": "${env:QT5_PATH}/msvc2019_64/bin;${env:FFMPEG_X64_PATH}/bin;${env:PATH}",
-      "PKG_CONFIG_PATH": "${env:FFMPEG_X64_PATH}/lib/pkgconfig",
+      "QT5_TOOLCHAIN": "msvc2019_64",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PATH": "${env:QT5_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
+    }
+  },
+  {
+    "name": "qt5-latest-clang-x86_64",
+    "isTrusted": true,
+    "visualStudio": "68e8925c",
+    "visualStudioArchitecture": "x64",
+    "toolchainFile": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "compilers": {
+      "C": "clang.exe",
+      "CXX": "clang++.exe"
+    },
+    "cmakeSettings": {
+      "QT_QML_GENERATE_QMLLS_INI": "ON"
+    },
+    "environmentVariables": {
+      "QT5_TOOLCHAIN": "msvc2019_64",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PATH": "${env:QT5_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
+    }
+  },
+  {
+    "name": "qt5-latest-clang_x86",
+    "isTrusted": true,
+    "visualStudio": "68e8925c",
+    "visualStudioArchitecture": "x86",
+    "toolchainFile": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "compilers": {
+      "C": "clang.exe",
+      "CXX": "clang++.exe"
+    },
+    "cmakeSettings": {
+      "QT_QML_GENERATE_QMLLS_INI": "ON"
+    },
+    "environmentVariables": {
+      "QT5_TOOLCHAIN": "msvc2019",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PATH": "${env:QT5_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}"
     }
   },
   {
     "name": "qt5-latest-android-all",
     "isTrusted": true,
-    "toolchainFile": "${env:QT5_PATH}/android/lib/cmake/Qt5/Qt5Config.cmake",
+    "toolchainFile": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
     "preferredGenerator": {
       "name": "Ninja"
     },
@@ -266,8 +276,11 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "PATH": "${env:QT5_PATH}/msvc2019_64/bin;${env:FFMPEG_X64_PATH}/bin;${env:PATH}",
-      "VSCODE_QT_INSTALLATION": "${env:QT5_PATH}/msvc2019_64"
+      "QT5_TOOLCHAIN": "android",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PATH": "${env:QT5_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
     }
   },
   {
@@ -275,7 +288,7 @@
     "isTrusted": true,
     "visualStudio": "68e8925c",
     "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:QT_ROOT}/6.5.3/msvc2019_64/lib/cmake/Qt6/qt.toolchain.cmake",
+    "toolchainFile": "${env:QT_ROOT}/6.5.3/${env:QT5_TOOLCHAIN}/lib/cmake/Qt6/qt.toolchain.cmake",
     "preferredGenerator": {
       "name": "Visual Studio 18 2026",
       "platform": "x64"
@@ -284,8 +297,32 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "PATH": "${env:FFMPEG_X64_PATH}/bin;${env:QT_ROOT}/6.5.3/msvc2019_64/bin;${env:PATH}",
-      "PKG_CONFIG_PATH": "${env:FFMPEG_X64_PATH}/lib/pkgconfig",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "PATH": "${env:FFMPEG_PATH}/bin;${env:QT_ROOT}/6.5.3/${env:QT5_TOOLCHAIN}/bin;${env:PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
+    }
+  },
+  {
+    "name": "qt6.5-clang-cl-x86_64",
+    "isTrusted": true,
+    "visualStudio": "68e8925c",
+    "visualStudioArchitecture": "x64",
+    "toolchainFile": "${env:QT_ROOT}/6.5.3/${env:QT5_TOOLCHAIN}/lib/cmake/Qt6/qt.toolchain.cmake",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "compilers": {
+      "C": "clang-cl.exe",
+      "CXX": "clang-cl.exe"
+    },
+    "cmakeSettings": {
+      "QT_QML_GENERATE_QMLLS_INI": "ON"
+    },
+    "environmentVariables": {
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "PATH": "${env:FFMPEG_PATH}/bin;${env:QT_ROOT}/6.5.3/${env:QT5_TOOLCHAIN}/bin;${env:PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
     }
   },
@@ -294,7 +331,7 @@
     "isTrusted": true,
     "visualStudio": "68e8925c",
     "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:QT_ROOT}/6.5.3/msvc2019_64/lib/cmake/Qt6/qt.toolchain.cmake",
+    "toolchainFile": "${env:QT_ROOT}/6.5.3/${env:QT5_TOOLCHAIN}/lib/cmake/Qt6/qt.toolchain.cmake",
     "preferredGenerator": {
       "name": "Ninja"
     },
@@ -306,31 +343,10 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "PATH": "${env:FFMPEG_X64_PATH}/bin;${env:QT_ROOT}/6.5.3/msvc2019_64/bin;${env:PATH}",
-      "PKG_CONFIG_PATH": "${env:FFMPEG_X64_PATH}/lib/pkgconfig",
-      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}/6.5.3/msvc2019_64"
-    }
-  },
-  {
-    "name": "qt6.5-clang-cl-x86_64",
-    "isTrusted": true,
-    "visualStudio": "68e8925c",
-    "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:QT_ROOT}/6.5.3/msvc2019_64/lib/cmake/Qt6/qt.toolchain.cmake",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
-    "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
-    },
-    "cmakeSettings": {
-      "QT_QML_GENERATE_QMLLS_INI": "ON"
-    },
-    "environmentVariables": {
-      "PATH": "${env:FFMPEG_X64_PATH}/bin;${env:QT_ROOT}/6.5.3/msvc2019_64/bin;${env:PATH}",
-      "PKG_CONFIG_PATH": "${env:FFMPEG_X64_PATH}/lib/pkgconfig",
-      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}/6.5.3/msvc2019_64"
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "PATH": "${env:FFMPEG_PATH}/bin;${env:QT_ROOT}/6.5.3/${env:QT5_TOOLCHAIN}/bin;${env:PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
     }
   },
   {
@@ -338,7 +354,7 @@
     "isTrusted": true,
     "visualStudio": "68e8925c",
     "visualStudioArchitecture": "ARM64",
-    "toolchainFile": "${env:QT_PATH}/msvc2022_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
+    "toolchainFile": "${env:QT_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
     "preferredGenerator": {
       "name": "Visual Studio 18 2026"
     },
@@ -346,9 +362,11 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "PATH": "${env:FFMPEG_PATH}/bin;${env:QT_PATH}/msvc2022_arm64/bin;${env:PATH}",
+      "QT_TOOLCHAIN": "msvc2022_arm64",
+      "FFMPEG_PATH": "${env:FFMPEG_ARM64_PATH}",
       "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
-      "VSCODE_QT_INSTALLATION": "${env:QT_PATH}"
+      "PATH": "${env:QT_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
     }
   },
   {
@@ -356,7 +374,7 @@
     "isTrusted": true,
     "visualStudio": "68e8925c",
     "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:QT_PATH}/msvc2022_64/lib/cmake/Qt6/qt.toolchain.cmake",
+    "toolchainFile": "${env:QT_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
     "preferredGenerator": {
       "name": "Visual Studio 18 2026",
       "platform": "x64"
@@ -365,9 +383,11 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "PATH": "${env:FFMPEG_X64_PATH}/bin;${env:QT_PATH}/msvc2022_64/bin;${env:PATH}",
-      "PKG_CONFIG_PATH": "${env:FFMPEG_X64_PATH}/lib/pkgconfig",
-      "VSCODE_QT_INSTALLATION": "${env:QT_PATH}"
+      "QT_TOOLCHAIN": "msvc2022_64",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PATH": "${env:QT_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
     }
   },
   {
@@ -375,7 +395,7 @@
     "isTrusted": true,
     "visualStudio": "68e8925c",
     "visualStudioArchitecture": "ARM64",
-    "toolchainFile": "${env:QT_PATH}/msvc2022_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
+    "toolchainFile": "${env:QT_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
     "preferredGenerator": {
       "name": "Ninja"
     },
@@ -387,31 +407,11 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "PATH": "${env:FFMPEG_PATH}/bin;${env:QT_PATH}/msvc2022_arm64/bin;${env:PATH}",
+      "QT_TOOLCHAIN": "msvc2022_arm64",
+      "FFMPEG_PATH": "${env:FFMPEG_ARM64_PATH}",
       "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
-      "VSCODE_QT_INSTALLATION": "${env:QT_PATH}"
-    }
-  },
-  {
-    "name": "qt6-latest-clang-x86_64",
-    "isTrusted": true,
-    "visualStudio": "68e8925c",
-    "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:QT_PATH}/msvc2022_64/lib/cmake/Qt6/qt.toolchain.cmake",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
-    "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
-    },
-    "cmakeSettings": {
-      "QT_QML_GENERATE_QMLLS_INI": "ON"
-    },
-    "environmentVariables": {
-      "PATH": "${env:FFMPEG_X64_PATH}/bin;${env:QT_PATH}/msvc2022_64/bin;${env:PATH}",
-      "PKG_CONFIG_PATH": "${env:FFMPEG_X64_PATH}/lib/pkgconfig",
-      "VSCODE_QT_INSTALLATION": "${env:QT_PATH}/msvc2022_64"
+      "PATH": "${env:QT_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
     }
   },
   {
@@ -419,7 +419,7 @@
     "isTrusted": true,
     "visualStudio": "68e8925c",
     "visualStudioArchitecture": "ARM64",
-    "toolchainFile": "${env:QT_PATH}/msvc2022_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
+    "toolchainFile": "${env:QT_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
     "preferredGenerator": {
       "name": "Ninja"
     },
@@ -431,9 +431,11 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "PATH": "${env:FFMPEG_PATH}/bin;${env:QT_PATH}/msvc2022_arm64/bin;${env:PATH}",
+      "QT_TOOLCHAIN": "msvc2022_arm64",
+      "FFMPEG_PATH": "${env:FFMPEG_ARM64_PATH}",
       "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
-      "VSCODE_QT_INSTALLATION": "${env:QT_PATH}"
+      "PATH": "${env:QT_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
     }
   },
   {
@@ -441,7 +443,7 @@
     "isTrusted": true,
     "visualStudio": "68e8925c",
     "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:QT_PATH}/msvc2022_64/lib/cmake/Qt6/qt.toolchain.cmake",
+    "toolchainFile": "${env:QT_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
     "preferredGenerator": {
       "name": "Ninja"
     },
@@ -453,15 +455,41 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "PATH": "${env:FFMPEG_X64_PATH}/bin;${env:QT_PATH}/msvc2022_64/bin;${env:PATH}",
-      "PKG_CONFIG_PATH": "${env:FFMPEG_X64_PATH}/lib/pkgconfig",
-      "VSCODE_QT_INSTALLATION": "${env:QT_PATH}/msvc2022_64"
+      "QT_TOOLCHAIN": "msvc2022_64",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PATH": "${env:QT_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
+    }
+  },
+  {
+    "name": "qt6-latest-clang-x86_64",
+    "isTrusted": true,
+    "visualStudio": "68e8925c",
+    "visualStudioArchitecture": "x64",
+    "toolchainFile": "${env:QT_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "compilers": {
+      "C": "clang.exe",
+      "CXX": "clang++.exe"
+    },
+    "cmakeSettings": {
+      "QT_QML_GENERATE_QMLLS_INI": "ON"
+    },
+    "environmentVariables": {
+      "QT_TOOLCHAIN": "msvc2022_64",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PATH": "${env:QT_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
     }
   },
   {
     "name": "qt6-latest-android-all",
     "isTrusted": true,
-    "toolchainFile": "${env:QT_PATH}/android_arm64_v8a/lib/cmake/Qt6/qt.toolchain.cmake",
+    "toolchainFile": "${env:QT_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
     "preferredGenerator": {
       "name": "Ninja"
     },
@@ -475,73 +503,11 @@
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     },
     "environmentVariables": {
-      "PATH": "${env:QT_PATH}/msvc2022_arm64/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
-      "VSCODE_QT_INSTALLATION": "${env:QT_PATH}"
-    }
-  },
-  {
-    "name": "qt6-beta-clang-arm64",
-    "isTrusted": true,
-    "visualStudio": "68e8925c",
-    "visualStudioArchitecture": "ARM64",
-    "toolchainFile": "${env:QT_ROOT}/6.11.0/msvc2022_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
-    "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
-    },
-    "cmakeSettings": {
-      "QT_QML_GENERATE_QMLLS_INI": "ON"
-    },
-    "environmentVariables": {
-      "PATH": "${env:QT_ROOT}/6.11.0/msvc2022_arm64/bin;${env:PATH}",
+      "QT_TOOLCHAIN": "android_arm64_v8a",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig",
-      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}/6.11.0/msvc2022_arm64"
-    }
-  },
-  {
-    "name": "qt6-beta-clang-x86_64",
-    "isTrusted": true,
-    "visualStudio": "68e8925c",
-    "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:QT_ROOT}/6.11.0/msvc2022_64/lib/cmake/Qt6/qt.toolchain.cmake",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
-    "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
-    },
-    "cmakeSettings": {
-      "QT_QML_GENERATE_QMLLS_INI": "ON"
-    },
-    "environmentVariables": {
-      "PATH": "${env:FFMPEG_X64_PATH}/bin;${env:QT_ROOT}/6.11.0/msvc2022_64/bin;${env:PATH}",
-      "PKG_CONFIG_PATH": "${env:FFMPEG_X64_PATH}/lib/pkgconfig",
-      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}/6.11.0/msvc2022_64"
-    }
-  },
-  {
-    "name": "qt6-beta-android-all",
-    "isTrusted": true,
-    "toolchainFile": "${env:QT_ROOT}/6.11.0/android_arm64_v8a/lib/cmake/Qt6/qt.toolchain.cmake",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
-    "cmakeSettings": {
-      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
-      "ANDROID_NDK_ROOT": "${env:ANDROID_HOME}/ndk/26.1.10909125",
-      "QT_HOST_PATH": "${env:QT_ROOT}/6.11.0/msvc2022_arm64",
-      "QT_ANDROID_ABIS": "arm64-v8a;x86_64",
-      "QT_QML_GENERATE_QMLLS_INI": "ON"
-    },
-    "environmentVariables": {
-      "PATH": "${env:QT_ROOT}/6.11.0/msvc2022_arm64/bin;${env:PATH}",
-      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}/6.11.0/msvc2022_arm64"
+      "PATH": "${env:QT_PATH}/bin;${env:FFMPEG_PATH}/bin;${env:PATH}",
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}"
     }
   }
 ]
