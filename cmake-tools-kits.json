@@ -404,7 +404,6 @@
       "platform": "x64"
     },
     "environmentVariables": {
-      "QT_TOOLCHAIN": "msvc2022_64",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}/bin"
@@ -505,7 +504,6 @@
       "CXX": "clang-cl.exe"
     },
     "environmentVariables": {
-      "QT_TOOLCHAIN": "msvc2022_64",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
@@ -525,7 +523,6 @@
       "name": "Ninja"
     },
     "environmentVariables": {
-      "QT_TOOLCHAIN": "android_arm64_v8a",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}/bin"
