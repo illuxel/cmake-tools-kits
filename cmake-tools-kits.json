@@ -3,7 +3,7 @@
     "name": "cl-aarch64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "ARM64",
     "preferredGenerator": {
       "name": "Visual Studio 18 2026"
@@ -13,7 +13,7 @@
     "name": "cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Visual Studio 18 2026"
@@ -23,7 +23,7 @@
     "name": "clang-aarch64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "ARM64",
     "preferredGenerator": {
       "name": "Ninja"
@@ -37,7 +37,7 @@
     "name": "clang-cl-aarch64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "ARM64",
     "preferredGenerator": {
       "name": "Ninja"
@@ -51,7 +51,7 @@
     "name": "clang-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Ninja"
@@ -65,7 +65,7 @@
     "name": "clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Ninja"
@@ -79,7 +79,7 @@
     "name": "vcpkg-cl-aarch64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "ARM64",
     "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
     "preferredGenerator": {
@@ -90,7 +90,7 @@
     "name": "vcpkg-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
     "preferredGenerator": {
@@ -102,7 +102,7 @@
     "name": "vcpkg-clang-aarch64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "ARM64",
     "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
     "preferredGenerator": {
@@ -117,7 +117,7 @@
     "name": "vcpkg-clang-cl-aarch64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "ARM64",
     "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
     "preferredGenerator": {
@@ -132,7 +132,7 @@
     "name": "vcpkg-clang-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
     "preferredGenerator": {
@@ -147,7 +147,7 @@
     "name": "vcpkg-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
     "preferredGenerator": {
@@ -162,7 +162,7 @@
     "name": "qt5-latest-cl-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x86",
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
@@ -180,7 +180,7 @@
     "name": "qt5-latest-clang_x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x86",
     "preferredGenerator": {
       "name": "Ninja"
@@ -205,7 +205,7 @@
     "name": "qt5-latest-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Visual Studio 18 2026",
@@ -227,7 +227,7 @@
     "name": "qt5-latest-clang-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Ninja"
@@ -252,7 +252,7 @@
     "name": "qt5-latest-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Ninja"
@@ -300,7 +300,7 @@
     "name": "qt6.5-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Visual Studio 18 2026",
@@ -322,7 +322,7 @@
     "name": "qt6.5-clang-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Ninja"
@@ -347,7 +347,7 @@
     "name": "qt6.5-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Ninja"
@@ -372,7 +372,7 @@
     "name": "qt6-latest-cl-aarch64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "ARM64",
     "preferredGenerator": {
       "name": "Visual Studio 18 2026"
@@ -393,7 +393,7 @@
     "name": "qt6-latest-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Visual Studio 18 2026",
@@ -415,7 +415,7 @@
     "name": "qt6-latest-clang-aarch64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "ARM64",
     "preferredGenerator": {
       "name": "Ninja"
@@ -440,7 +440,7 @@
     "name": "qt6-latest-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Ninja"
@@ -465,7 +465,7 @@
     "name": "qt6-latest-clang-cl-aarch64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "ARM64",
     "preferredGenerator": {
       "name": "Ninja"
@@ -490,7 +490,7 @@
     "name": "qt6-latest-clang-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "29404f5e",
+    "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": {
       "name": "Ninja"
