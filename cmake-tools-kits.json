@@ -169,8 +169,8 @@
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:LLVM_ROOT}/bin;${env:FFMPEG_PATH}/bin;${env:QT5_PATH}/bin"
     },
+    "toolchainFIle": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -191,11 +191,34 @@
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/bin;${env:FFMPEG_PATH}/bin;${env:QT5_PATH}/bin"
+      "PATH": "${env:PATH};${env:LLVM_ROOT}/bin;${env:QT5_PATH}/bin"
     },
+    "toolchainFIle": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
+      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
+      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
+      "QT_QML_GENERATE_QMLLS_INI": "ON"
+    }
+  },
+  {
+    "name": "qt5-latest-clang-cl_x86",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e2a2d3d0",
+    "visualStudioArchitecture": "x86",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "compilers": {
+      "C": "clang-cl.exe",
+      "CXX": "clang-cl.exe"
+    },
+    "environmentVariables": {
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
+      "PATH": "${env:PATH};${env:LLVM_ROOT}/bin;${env:QT5_PATH}/bin"
+    },
+    "toolchainFIle": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
+    "cmakeSettings": {
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -216,8 +239,8 @@
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}/bin"
     },
+    "toolchainFIle": "${env:QT5_PATH}_64/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -241,10 +264,10 @@
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}/bin"
     },
+    "toolchainFIle": "${env:QT5_PATH}_64/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT5_PATH}_64/lib/cmake/Qt5/Qt5Config.cmake",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -262,12 +285,12 @@
       "CXX": "clang++.exe"
     },
     "environmentVariables": {
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin"
     },
+    "toolchainFIle": "${env:QT5_PATH}_64/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT5_PATH}_64/lib/cmake/Qt5/Qt5Config.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -285,8 +308,8 @@
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}/bin"
     },
+    "toolchainFIle": "${env:QT5_PATH}/../android/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT5_PATH}/../android/lib/cmake/Qt5/Qt5Config.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
@@ -311,8 +334,8 @@
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_ROOT}/6.5.3/msvc2019_64/bin"
     },
+    "toolchainFIle": "${env:QT_ROOT}/6.5.3/msvc2019_64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT_ROOT}/6.5.3/msvc2019_64/lib/cmake/Qt6/qt.toolchain.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -336,8 +359,8 @@
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
     },
+    "toolchainFIle": "${env:QT_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -361,8 +384,8 @@
       "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT65_PATH}_64/bin",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig"
     },
+    "toolchainFIle": "${env:QT65_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT65_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -380,10 +403,10 @@
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/arm64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}_arm64/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}_arm64/bin"
     },
+    "toolchainFIle": "${env:QT_PATH}_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT_PATH}_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -404,8 +427,8 @@
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
     },
+    "toolchainFIle": "${env:QT_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -427,10 +450,10 @@
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/arm64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}_arm64/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}_arm64/bin"
     },
+    "toolchainFIle": "${env:QT_PATH}_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT_PATH}_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -454,8 +477,8 @@
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
     },
+    "toolchainFIle": "${env:QT_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -477,10 +500,10 @@
     "environmentVariables": {
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/arm64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}_arm64/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}_arm64/bin"
     },
+    "toolchainFIle": "${env:QT_PATH}_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT_PATH}_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -504,8 +527,8 @@
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
     },
+    "toolchainFIle": "${env:QT_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -523,8 +546,8 @@
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}/bin"
     },
+    "toolchainFIle": "${env:QT_PATH}_arm64/../lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
-      "CMAKE_TOOLCHAIN_FILE": "${env:QT_PATH}_arm64/../lib/cmake/Qt6/qt.toolchain.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
