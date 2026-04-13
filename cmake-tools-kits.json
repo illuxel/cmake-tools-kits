@@ -4,30 +4,21 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "ARM64",
-    "preferredGenerator": {
-      "name": "Visual Studio 18 2026"
-    }
+    "visualStudioArchitecture": "arm64"
   },
   {
     "name": "cl-x86_64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "x64",
-    "preferredGenerator": {
-      "name": "Visual Studio 18 2026"
-    }
+    "visualStudioArchitecture": "x64"
   },
   {
     "name": "clang-aarch64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "ARM64",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
+    "visualStudioArchitecture": "arm64",
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
@@ -38,10 +29,7 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "ARM64",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
+    "visualStudioArchitecture": "arm64",
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
@@ -53,9 +41,6 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
@@ -67,9 +52,6 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
@@ -80,11 +62,8 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "ARM64",
-    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
-    "preferredGenerator": {
-      "name": "Visual Studio 18 2026"
-    }
+    "visualStudioArchitecture": "arm64",
+    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake"
   },
   {
     "name": "vcpkg-cl-x86_64",
@@ -92,22 +71,27 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
-    "preferredGenerator": {
-      "name": "Visual Studio 18 2026",
-      "platform": "x64"
-    }
+    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake"
   },
   {
     "name": "vcpkg-clang-aarch64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "ARM64",
+    "visualStudioArchitecture": "arm64",
     "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
+    "compilers": {
+      "C": "clang.exe",
+      "CXX": "clang++.exe"
+    }
+  },
+  {
+    "name": "vcpkg-clang-x86_64",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e2a2d3d0",
+    "visualStudioArchitecture": "x64",
+    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
@@ -118,11 +102,8 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "ARM64",
+    "visualStudioArchitecture": "arm64",
     "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
@@ -135,27 +116,9 @@
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
     "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
-    }
-  },
-  {
-    "name": "vcpkg-clang-x86_64",
-    "keep": true,
-    "isTrusted": true,
-    "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
-    "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
     }
   },
   {
@@ -167,7 +130,7 @@
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/bin;${env:FFMPEG_PATH}/bin;${env:QT5_PATH}/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}/bin"
     },
     "toolchainFile": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
@@ -183,16 +146,13 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x86",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/bin;${env:QT5_PATH}/bin"
+      "PATH": "${env:PATH};${env:QT5_PATH}/bin"
     },
     "toolchainFile": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
@@ -208,16 +168,13 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x86",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/bin;${env:QT5_PATH}/bin"
+      "PATH": "${env:PATH};${env:QT5_PATH}/bin"
     },
     "toolchainFile": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
@@ -233,15 +190,34 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "preferredGenerator": {
-      "name": "Visual Studio 18 2026",
-      "platform": "x64"
+    "environmentVariables": {
+      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}/bin"
+    },
+    "toolchainFile": "${env:QT5_PATH}_64/lib/cmake/Qt5/Qt5Config.cmake",
+    "cmakeSettings": {
+      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
+      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
+      "QT_QML_GENERATE_QMLLS_INI": "ON"
+    }
+  },
+  {
+    "name": "qt5-clang-x86_64",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e2a2d3d0",
+    "visualStudioArchitecture": "x64",
+    "compilers": {
+      "C": "clang.exe",
+      "CXX": "clang++.exe"
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin"
     },
     "toolchainFile": "${env:QT5_PATH}_64/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
@@ -267,33 +243,7 @@
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}/bin"
-    },
-    "toolchainFile": "${env:QT5_PATH}_64/lib/cmake/Qt5/Qt5Config.cmake",
-    "cmakeSettings": {
-      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "QT_QML_GENERATE_QMLLS_INI": "ON"
-    }
-  },
-  {
-    "name": "qt5-clang-x86_64",
-    "keep": true,
-    "isTrusted": true,
-    "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "x64",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
-    "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
-    },
-    "environmentVariables": {
-      "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
-      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}/bin"
     },
     "toolchainFile": "${env:QT5_PATH}_64/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
@@ -331,15 +281,11 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "preferredGenerator": {
-      "name": "Visual Studio 18 2026",
-      "platform": "x64"
-    },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_ROOT}/6.5.3/msvc2019_64/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_ROOT}/6.5.3/msvc2019_64/bin"
     },
     "toolchainFile": "${env:QT_ROOT}/6.5.3/msvc2019_64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
@@ -354,9 +300,6 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
@@ -365,7 +308,7 @@
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
     },
     "toolchainFile": "${env:QT_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
@@ -380,9 +323,6 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
@@ -390,7 +330,7 @@
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT65_PATH}_64/bin",
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT65_PATH}_64/bin",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig"
     },
     "toolchainFile": "${env:QT65_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
@@ -405,18 +345,15 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "ARM64",
-    "preferredGenerator": {
-      "name": "Visual Studio 18 2026"
-    },
+    "visualStudioArchitecture": "arm64",
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
-      "FFMPEG_PATH": "${env:FFMPEG_ARM64_PATH}",
+      "FFMPEG_PATH": "${env:FFMPEG_arm64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}_arm64/bin"
     },
-    "toolchainFile": "${env:QT_PATH}_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
+      "CMAKE_TOOLCHAIN_FILE": "${env:QT_PATH}_arm64/lib/cmake/Qt6/qt.toolchain.cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -428,15 +365,11 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "preferredGenerator": {
-      "name": "Visual Studio 18 2026",
-      "platform": "x64"
-    },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
     },
     "toolchainFile": "${env:QT_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
@@ -450,17 +383,14 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "ARM64",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
+    "visualStudioArchitecture": "arm64",
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
-      "FFMPEG_PATH": "${env:FFMPEG_ARM64_PATH}",
+      "FFMPEG_PATH": "${env:FFMPEG_arm64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}_arm64/bin"
     },
@@ -477,9 +407,6 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
@@ -488,7 +415,7 @@
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
     },
     "toolchainFile": "${env:QT_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
@@ -502,17 +429,14 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "ARM64",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
+    "visualStudioArchitecture": "arm64",
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
-      "FFMPEG_PATH": "${env:FFMPEG_ARM64_PATH}",
+      "FFMPEG_PATH": "${env:FFMPEG_arm64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}_arm64/bin"
     },
@@ -529,9 +453,6 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "preferredGenerator": {
-      "name": "Ninja"
-    },
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
@@ -540,7 +461,7 @@
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:LLVM_ROOT}/x64/bin;${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}_64/bin"
     },
     "toolchainFile": "${env:QT_PATH}_64/lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
