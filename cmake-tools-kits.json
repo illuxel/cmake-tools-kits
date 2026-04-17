@@ -58,12 +58,104 @@
     }
   },
   {
-    "name": "vcpkg-cl-aarch64",
+    "name": "vcpkg-cl-x86",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "arm64",
-    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake"
+    "visualStudioArchitecture": "x86",
+    "environmentVariables": { },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x86-windows",
+      "VCPKG_HOST_TRIPLET": "x86-windows"
+    }
+  },
+  {
+    "name": "vcpkg-cl-x86-static",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e2a2d3d0",
+    "visualStudioArchitecture": "x86",
+    "environmentVariables": { },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x86-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "x64-windows-static-md"
+    }
+  },
+  {
+    "name": "vcpkg-clang-x86",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e2a2d3d0",
+    "visualStudioArchitecture": "x86",
+    "compilers": {
+      "C": "clang.exe",
+      "CXX": "clang++.exe"
+    },
+    "environmentVariables": { },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x86-windows",
+      "VCPKG_HOST_TRIPLET": "x86-windows"
+    }
+  },
+  {
+    "name": "vcpkg-clang-x86-static",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e2a2d3d0",
+    "visualStudioArchitecture": "x86",
+    "compilers": {
+      "C": "clang.exe",
+      "CXX": "clang++.exe"
+    },
+    "environmentVariables": { },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x86-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "x86-windows-static-md"
+    }
+  },
+  {
+    "name": "vcpkg-clang-cl-x86",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e2a2d3d0",
+    "visualStudioArchitecture": "x86",
+    "compilers": {
+      "C": "clang-cl.exe",
+      "CXX": "clang-cl.exe"
+    },
+    "environmentVariables": { },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x86-windows",
+      "VCPKG_HOST_TRIPLET": "x86-windows"
+    }
+  },
+  {
+    "name": "vcpkg-clang-cl-x86-static",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e2a2d3d0",
+    "visualStudioArchitecture": "x86",
+    "compilers": {
+      "C": "clang-cl.exe",
+      "CXX": "clang-cl.exe"
+    },
+    "environmentVariables": { },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x86-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "x86-windows-static-md"
+    }
   },
   {
     "name": "vcpkg-cl-x86_64",
@@ -71,18 +163,25 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake"
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "environmentVariables": { },
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x64-windows",
+      "VCPKG_HOST_TRIPLET": "x64-windows"
+    }
   },
   {
-    "name": "vcpkg-clang-aarch64",
+    "name": "vcpkg-cl-x86_64-static",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "arm64",
-    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
-    "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
+    "visualStudioArchitecture": "x64",
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "environmentVariables": { },
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
     }
   },
   {
@@ -91,22 +190,33 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
+    },
+    "environmentVariables": { },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x64-windows",
+      "VCPKG_HOST_TRIPLET": "x64-windows"
     }
   },
   {
-    "name": "vcpkg-clang-cl-aarch64",
+    "name": "vcpkg-clang-x86_64-static",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "arm64",
-    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
+    "visualStudioArchitecture": "x64",
     "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
+      "C": "clang.exe",
+      "CXX": "clang++.exe"
+    },
+    "environmentVariables": { },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
     }
   },
   {
@@ -115,10 +225,33 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
+    },
+    "environmentVariables": { },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x64-windows",
+      "VCPKG_HOST_TRIPLET": "x64-windows"
+    }
+  },
+  {
+    "name": "vcpkg-clang-cl-x86_64-static",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e2a2d3d0",
+    "visualStudioArchitecture": "x64",
+    "compilers": {
+      "C": "clang-cl.exe",
+      "CXX": "clang-cl.exe"
+    },
+    "environmentVariables": { },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "cmakeSettings": {
+      "VCPKG_BUILD_TYPE": "release",
+      "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
     }
   },
   {
@@ -129,6 +262,7 @@
     "visualStudioArchitecture": "x86",
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
+      "FFMPEG_PATH": "${env:FFMPEG_X86_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}/bin"
     },
@@ -152,7 +286,9 @@
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
-      "PATH": "${env:PATH};${env:QT5_PATH}/bin"
+      "FFMPEG_PATH": "${env:FFMPEG_X86_PATH}",
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}/bin"
     },
     "toolchainFile": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
@@ -174,7 +310,9 @@
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
-      "PATH": "${env:PATH};${env:QT5_PATH}/bin"
+      "FFMPEG_PATH": "${env:FFMPEG_X86_PATH}",
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}/bin"
     },
     "toolchainFile": "${env:QT5_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
@@ -194,7 +332,7 @@
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin"
     },
     "toolchainFile": "${env:QT5_PATH}_64/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
@@ -243,7 +381,7 @@
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT_PATH}/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin"
     },
     "toolchainFile": "${env:QT5_PATH}_64/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
@@ -261,8 +399,9 @@
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
+      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin"
     },
     "toolchainFile": "${env:QT5_PATH}/../android/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
