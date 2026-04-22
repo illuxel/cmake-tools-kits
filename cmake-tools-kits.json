@@ -4,14 +4,20 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "arm64"
+    "visualStudioArchitecture": "arm64",
+    "preferredGenerator": {
+      "name": "Ninja"
+    }
   },
   {
     "name": "cl-x86_64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "x64"
+    "visualStudioArchitecture": "x64",
+    "preferredGenerator": {
+      "name": "Ninja"
+    }
   },
   {
     "name": "clang-aarch64",
@@ -19,6 +25,9 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "arm64",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
@@ -30,6 +39,9 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "arm64",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
@@ -41,6 +53,9 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
@@ -52,6 +67,9 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x64",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
@@ -62,27 +80,18 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "x86",
+    "visualStudioArchitecture": "arm64_x86",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "compilers": {
+      "C": "cl.exe",
+      "CXX": "cl.exe"
+    },
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x86-windows",
-      "VCPKG_HOST_TRIPLET": "x86-windows"
-    }
-  },
-  {
-    "name": "vcpkg-cl-x86-static",
-    "keep": true,
-    "isTrusted": true,
-    "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "x86",
-    "environmentVariables": { },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
-    "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x86-windows-static-md",
-      "VCPKG_HOST_TRIPLET": "x64-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "x86-windows-static"
     }
   },
   {
@@ -91,6 +100,9 @@
     "isTrusted": true,
     "visualStudio": "e2a2d3d0",
     "visualStudioArchitecture": "x86",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
@@ -98,27 +110,7 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x86-windows",
-      "VCPKG_HOST_TRIPLET": "x86-windows"
-    }
-  },
-  {
-    "name": "vcpkg-clang-x86-static",
-    "keep": true,
-    "isTrusted": true,
-    "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "x86",
-    "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
-    },
-    "environmentVariables": { },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
-    "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x86-windows-static-md",
-      "VCPKG_HOST_TRIPLET": "x86-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "x86-windows"
     }
   },
   {
@@ -134,27 +126,7 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x86-windows",
-      "VCPKG_HOST_TRIPLET": "x86-windows"
-    }
-  },
-  {
-    "name": "vcpkg-clang-cl-x86-static",
-    "keep": true,
-    "isTrusted": true,
-    "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "x86",
-    "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
-    },
-    "environmentVariables": { },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
-    "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x86-windows-static-md",
-      "VCPKG_HOST_TRIPLET": "x86-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "x86-windows"
     }
   },
   {
@@ -166,22 +138,7 @@
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "environmentVariables": { },
     "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x64-windows",
-      "VCPKG_HOST_TRIPLET": "x64-windows"
-    }
-  },
-  {
-    "name": "vcpkg-cl-x86_64-static",
-    "keep": true,
-    "isTrusted": true,
-    "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "x64",
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
-    "environmentVariables": { },
-    "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "x64-windows"
     }
   },
   {
@@ -197,26 +154,7 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x64-windows",
-      "VCPKG_HOST_TRIPLET": "x64-windows"
-    }
-  },
-  {
-    "name": "vcpkg-clang-x86_64-static",
-    "keep": true,
-    "isTrusted": true,
-    "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "x64",
-    "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
-    },
-    "environmentVariables": { },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
-    "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "x64-windows-static"
     }
   },
   {
@@ -232,26 +170,7 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x64-windows",
-      "VCPKG_HOST_TRIPLET": "x64-windows"
-    }
-  },
-  {
-    "name": "vcpkg-clang-cl-x86_64-static",
-    "keep": true,
-    "isTrusted": true,
-    "visualStudio": "e2a2d3d0",
-    "visualStudioArchitecture": "x64",
-    "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
-    },
-    "environmentVariables": { },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
-    "cmakeSettings": {
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "x64-windows-static"
     }
   },
   {
