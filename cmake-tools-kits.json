@@ -1,6 +1,6 @@
 [
   {
-    "name": "cl-aarch64",
+    "name": "cl-arm64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e1eb8e8b",
@@ -9,10 +9,16 @@
     "compilers": {
       "C": "cl.exe",
       "CXX": "cl.exe"
+    },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64"
     }
   },
   {
-    "name": "clang-aarch64",
+    "name": "clang-arm64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e1eb8e8b",
@@ -21,10 +27,16 @@
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
+    },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64"
     }
   },
   {
-    "name": "cl-clang-aarch64",
+    "name": "cl-clang-arm64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "e1eb8e8b",
@@ -33,6 +45,66 @@
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
+    },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64"
+    }
+  },
+  {
+    "name": "cl-x86",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e1eb8e8b",
+    "visualStudioArchitecture": "x86",
+    "preferredGenerator": { "name": "Ninja" },
+    "compilers": {
+      "C": "cl.exe",
+      "CXX": "cl.exe"
+    },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86"
+    }
+  },
+  {
+    "name": "clang-x86",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e1eb8e8b",
+    "visualStudioArchitecture": "x86",
+    "preferredGenerator": { "name": "Ninja" },
+    "compilers": {
+      "C": "clang.exe",
+      "CXX": "clang++.exe"
+    },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86"
+    }
+  },
+  {
+    "name": "cl-clang-x86",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e1eb8e8b",
+    "visualStudioArchitecture": "x86",
+    "preferredGenerator": { "name": "Ninja" },
+    "compilers": {
+      "C": "clang-cl.exe",
+      "CXX": "clang-cl.exe"
+    },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86"
     }
   },
   {
@@ -45,6 +117,12 @@
     "compilers": {
       "C": "cl.exe",
       "CXX": "cl.exe"
+    },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86_64"
     }
   },
   {
@@ -57,6 +135,12 @@
     "compilers": {
       "C": "clang.exe",
       "CXX": "clang++.exe"
+    },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86_64"
     }
   },
   {
@@ -69,6 +153,12 @@
     "compilers": {
       "C": "clang-cl.exe",
       "CXX": "clang-cl.exe"
+    },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86_64"
     }
   },
   {
@@ -85,6 +175,10 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
       "VCPKG_TARGET_TRIPLET": "arm64-windows-static-md"
     }
@@ -103,6 +197,10 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
       "VCPKG_TARGET_TRIPLET": "arm64-windows-static-md"
     }
@@ -121,6 +219,10 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
       "VCPKG_TARGET_TRIPLET": "arm64-windows-static-md"
     }
@@ -139,6 +241,10 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
       "VCPKG_TARGET_TRIPLET": "x86-windows-static-md"
     }
@@ -157,6 +263,10 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
       "VCPKG_TARGET_TRIPLET": "x86-windows-static-md"
     }
@@ -175,6 +285,10 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
       "VCPKG_TARGET_TRIPLET": "x86-windows-static-md"
     }
@@ -193,6 +307,10 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
       "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
     }
@@ -211,6 +329,10 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
       "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
     }
@@ -229,6 +351,10 @@
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
       "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
     }
@@ -247,6 +373,10 @@
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_arm64/bin;${env:QT6_PATH}_arm64/bin"
     },
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_arm64/lib/cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
@@ -271,6 +401,10 @@
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_arm64/bin;${env:QT6_PATH}_arm64/bin"
     },
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:QT5_PATH}_arm64/lib/cmake;${env:QT6_PATH}_arm64/lib/cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
@@ -295,6 +429,10 @@
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_arm64/bin;${env:QT6_PATH}_arm64/bin"
     },
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:QT5_PATH}_arm64/lib/cmake;${env:QT6_PATH}_arm64/lib/cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
@@ -315,6 +453,10 @@
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin;${env:QT6_PATH}_64/bin"
     },
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x64",
       "CMAKE_MODULE_PATH": "${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
@@ -339,6 +481,10 @@
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin;${env:QT6_PATH}_64/bin"
     },
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x64",
       "CMAKE_MODULE_PATH": "${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
@@ -363,6 +509,10 @@
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin;${env:QT6_PATH}_64/bin"
     },
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x64",
       "CMAKE_MODULE_PATH": "${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
@@ -382,6 +532,10 @@
     },
     "toolchainFile": "${env:QT5_PATH}/../android/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/android",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
@@ -403,6 +557,10 @@
     },
     "toolchainFile": "${env:QT6_PATH}_arm64/../lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/android",
       "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
