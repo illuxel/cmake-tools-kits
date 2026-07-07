@@ -186,7 +186,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "arm64-windows-static-md"
     }
   },
@@ -212,7 +212,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "arm64-windows-static-md"
     }
   },
@@ -238,7 +238,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "arm64-windows-static-md"
     }
   },
@@ -264,7 +264,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x86-windows-static-md"
     }
   },
@@ -290,7 +290,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x86-windows-static-md"
     }
   },
@@ -316,7 +316,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x86-windows-static-md"
     }
   },
@@ -342,7 +342,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
     }
   },
@@ -368,7 +368,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
     }
   },
@@ -394,7 +394,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_HOST_TRIPLET": "arm64-windows-static-md",
+      "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
     }
   },
