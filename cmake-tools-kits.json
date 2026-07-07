@@ -399,6 +399,28 @@
     }
   },
   {
+    "name": "vcpkg-android",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "e1eb8e8b",
+    "visualStudioArchitecture": "arm64",
+    "preferredGenerator": { "name": "Ninja" },
+    "environmentVariables": {
+      "VCPKG_DISABLE_METRICS": "1",
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+    },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
+      "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
+      "VCPKG_HOST_TRIPLET": "arm64-windows",
+      "VCPKG_TARGET_TRIPLET": "arm64-android"
+    }
+  },
+  {
     "name": "qt-cl-arm64",
     "keep": true,
     "isTrusted": true,
