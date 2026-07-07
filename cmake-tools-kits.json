@@ -175,7 +175,10 @@
       "C": "cl",
       "CXX": "cl"
     },
-    "environmentVariables": { "VCPKG_FORCE_SYSTEM_BINARIES": "1" },
+    "environmentVariables": {
+      "VCPKG_DISABLE_METRICS": "1",
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+    },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -198,7 +201,10 @@
       "C": "clang-cl",
       "CXX": "clang-cl"
     },
-    "environmentVariables": { "VCPKG_FORCE_SYSTEM_BINARIES": "1" },
+    "environmentVariables": {
+      "VCPKG_DISABLE_METRICS": "1",
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+    },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -221,7 +227,10 @@
       "C": "clang",
       "CXX": "clang++"
     },
-    "environmentVariables": { "VCPKG_FORCE_SYSTEM_BINARIES": "1" },
+    "environmentVariables": {
+      "VCPKG_DISABLE_METRICS": "1",
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+    },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -244,7 +253,10 @@
       "C": "cl",
       "CXX": "cl"
     },
-    "environmentVariables": { "VCPKG_FORCE_SYSTEM_BINARIES": "1" },
+    "environmentVariables": {
+      "VCPKG_DISABLE_METRICS": "1",
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+    },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -267,7 +279,10 @@
       "C": "clang-cl",
       "CXX": "clang-cl"
     },
-    "environmentVariables": { "VCPKG_FORCE_SYSTEM_BINARIES": "1" },
+    "environmentVariables": {
+      "VCPKG_DISABLE_METRICS": "1",
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+    },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -290,7 +305,10 @@
       "C": "clang",
       "CXX": "clang++"
     },
-    "environmentVariables": { "VCPKG_FORCE_SYSTEM_BINARIES": "1" },
+    "environmentVariables": {
+      "VCPKG_DISABLE_METRICS": "1",
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+    },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -313,7 +331,10 @@
       "C": "cl",
       "CXX": "cl"
     },
-    "environmentVariables": { "VCPKG_FORCE_SYSTEM_BINARIES": "1" },
+    "environmentVariables": {
+      "VCPKG_DISABLE_METRICS": "1",
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+    },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -336,7 +357,10 @@
       "C": "clang-cl",
       "CXX": "clang-cl"
     },
-    "environmentVariables": { "VCPKG_FORCE_SYSTEM_BINARIES": "1" },
+    "environmentVariables": {
+      "VCPKG_DISABLE_METRICS": "1",
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+    },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -359,7 +383,10 @@
       "C": "clang",
       "CXX": "clang++"
     },
-    "environmentVariables": { "VCPKG_FORCE_SYSTEM_BINARIES": "1" },
+    "environmentVariables": {
+      "VCPKG_DISABLE_METRICS": "1",
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+    },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
