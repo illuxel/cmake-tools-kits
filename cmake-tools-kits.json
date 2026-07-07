@@ -7,8 +7,8 @@
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "cl.exe",
-      "CXX": "cl.exe"
+      "C": "cl",
+      "CXX": "cl"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -26,8 +26,8 @@
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
+      "C": "clang",
+      "CXX": "clang++"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -45,8 +45,8 @@
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
+      "C": "clang-cl",
+      "CXX": "clang-cl"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -64,8 +64,8 @@
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "cl.exe",
-      "CXX": "cl.exe"
+      "C": "cl",
+      "CXX": "cl"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -82,8 +82,8 @@
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
+      "C": "clang",
+      "CXX": "clang++"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -100,8 +100,8 @@
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
+      "C": "clang-cl",
+      "CXX": "clang-cl"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -118,8 +118,8 @@
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "cl.exe",
-      "CXX": "cl.exe"
+      "C": "cl",
+      "CXX": "cl"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -136,8 +136,8 @@
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
+      "C": "clang",
+      "CXX": "clang++"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -154,8 +154,8 @@
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
+      "C": "clang-cl",
+      "CXX": "clang-cl"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -172,8 +172,8 @@
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "cl.exe",
-      "CXX": "cl.exe"
+      "C": "cl",
+      "CXX": "cl"
     },
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -195,8 +195,8 @@
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
+      "C": "clang-cl",
+      "CXX": "clang-cl"
     },
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -218,8 +218,8 @@
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
+      "C": "clang",
+      "CXX": "clang++"
     },
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -241,8 +241,8 @@
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "cl.exe",
-      "CXX": "cl.exe"
+      "C": "cl",
+      "CXX": "cl"
     },
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -264,8 +264,8 @@
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
+      "C": "clang-cl",
+      "CXX": "clang-cl"
     },
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -287,8 +287,8 @@
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
+      "C": "clang",
+      "CXX": "clang++"
     },
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -310,8 +310,8 @@
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "cl.exe",
-      "CXX": "cl.exe"
+      "C": "cl",
+      "CXX": "cl"
     },
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -333,8 +333,8 @@
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
+      "C": "clang-cl",
+      "CXX": "clang-cl"
     },
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -356,8 +356,8 @@
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
+      "C": "clang",
+      "CXX": "clang++"
     },
     "environmentVariables": { },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -403,8 +403,8 @@
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
+      "C": "clang-cl",
+      "CXX": "clang-cl"
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
@@ -431,8 +431,8 @@
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
+      "C": "clang",
+      "CXX": "clang++"
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
@@ -483,8 +483,8 @@
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang-cl.exe",
-      "CXX": "clang-cl.exe"
+      "C": "clang-cl",
+      "CXX": "clang-cl"
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
@@ -511,8 +511,8 @@
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "clang.exe",
-      "CXX": "clang++.exe"
+      "C": "clang",
+      "CXX": "clang++"
     },
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
