@@ -3,7 +3,7 @@
     "name": "cl-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -22,7 +22,7 @@
     "name": "clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -41,7 +41,7 @@
     "name": "cl-clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -60,7 +60,7 @@
     "name": "cl-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -78,7 +78,7 @@
     "name": "clang-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -96,7 +96,7 @@
     "name": "cl-clang-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -114,7 +114,7 @@
     "name": "cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -132,7 +132,7 @@
     "name": "clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -150,7 +150,7 @@
     "name": "cl-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -165,286 +165,278 @@
     }
   },
   {
+    "name": "msys-ucrt64-x86_64-w64-mingw32",
+    "keep": true,
+    "isTrusted": true,
+    "preferredGenerator": { "name": "MinGW Makefiles" },
+    "compilers": {
+      "C": "gcc.exe",
+      "CXX": "g++.exe"
+    },
+    "environmentVariables": {
+      "CMT_MINGW_PATH": "${env:MSYS64_PATH}/ucrt64/bin",
+      "MSYSTEM": "UCRT64",
+      "MSYSTEM_PREFIX": "/ucrt64",
+      "PATH": "${env:MSYS64_PATH}/ucrt64/bin;${env:MSYS64_PATH}/usr/bin;${env:PATH}"
+    }
+  },
+  {
     "name": "vcpkg-cl-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "cl",
       "CXX": "cl"
     },
     "environmentVariables": {
       "VCPKG_DISABLE_METRICS": "1",
-      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1"
     },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_ROOT": "${env:USERPROFILE}${env:HOME}/opt/install/vcpkg",
+      "VCPKG_INSTALLED_DIR": "${env:USERPROFILE}${env:HOME}/opt/install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
-      "VCPKG_TARGET_TRIPLET": "arm64-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "arm64-windows"
     }
   },
   {
     "name": "vcpkg-cl-clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "clang-cl",
       "CXX": "clang-cl"
     },
     "environmentVariables": {
       "VCPKG_DISABLE_METRICS": "1",
-      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1"
     },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_ROOT": "${env:USERPROFILE}${env:HOME}/opt/install/vcpkg",
+      "VCPKG_INSTALLED_DIR": "${env:USERPROFILE}${env:HOME}/opt/install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
-      "VCPKG_TARGET_TRIPLET": "arm64-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "arm64-windows"
     }
   },
   {
     "name": "vcpkg-clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "clang",
       "CXX": "clang++"
     },
     "environmentVariables": {
       "VCPKG_DISABLE_METRICS": "1",
-      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1"
     },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_ROOT": "${env:USERPROFILE}${env:HOME}/opt/install/vcpkg",
+      "VCPKG_INSTALLED_DIR": "${env:USERPROFILE}${env:HOME}/opt/install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
-      "VCPKG_TARGET_TRIPLET": "arm64-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "arm64-windows"
     }
   },
   {
     "name": "vcpkg-cl-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
-    "visualStudioArchitecture": "x86",
+    "visualStudio": "dd638741",
+    "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "cl",
       "CXX": "cl"
     },
     "environmentVariables": {
       "VCPKG_DISABLE_METRICS": "1",
-      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1"
     },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_ROOT": "${env:USERPROFILE}${env:HOME}/opt/install/vcpkg",
+      "VCPKG_INSTALLED_DIR": "${env:USERPROFILE}${env:HOME}/opt/install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
-      "VCPKG_TARGET_TRIPLET": "x86-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "x86-windows"
     }
   },
   {
     "name": "vcpkg-cl-clang-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
-    "visualStudioArchitecture": "x86",
+    "visualStudio": "dd638741",
+    "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "clang-cl",
       "CXX": "clang-cl"
     },
     "environmentVariables": {
       "VCPKG_DISABLE_METRICS": "1",
-      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1"
     },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_ROOT": "${env:USERPROFILE}${env:HOME}/opt/install/vcpkg",
+      "VCPKG_INSTALLED_DIR": "${env:USERPROFILE}${env:HOME}/opt/install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
-      "VCPKG_TARGET_TRIPLET": "x86-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "x86-windows"
     }
   },
   {
     "name": "vcpkg-clang-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
-    "visualStudioArchitecture": "x86",
+    "visualStudio": "dd638741",
+    "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "clang",
       "CXX": "clang++"
     },
     "environmentVariables": {
       "VCPKG_DISABLE_METRICS": "1",
-      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1"
     },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_ROOT": "${env:USERPROFILE}${env:HOME}/opt/install/vcpkg",
+      "VCPKG_INSTALLED_DIR": "${env:USERPROFILE}${env:HOME}/opt/install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
-      "VCPKG_TARGET_TRIPLET": "x86-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "x86-windows"
     }
   },
   {
     "name": "vcpkg-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
-    "visualStudioArchitecture": "x64",
+    "visualStudio": "dd638741",
+    "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "cl",
       "CXX": "cl"
     },
     "environmentVariables": {
       "VCPKG_DISABLE_METRICS": "1",
-      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1"
     },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_ROOT": "${env:USERPROFILE}${env:HOME}/opt/install/vcpkg",
+      "VCPKG_INSTALLED_DIR": "${env:USERPROFILE}${env:HOME}/opt/install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
-      "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "x64-windows"
     }
   },
   {
     "name": "vcpkg-cl-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
-    "visualStudioArchitecture": "x64",
+    "visualStudio": "dd638741",
+    "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "clang-cl",
       "CXX": "clang-cl"
     },
     "environmentVariables": {
       "VCPKG_DISABLE_METRICS": "1",
-      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1"
     },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_ROOT": "${env:USERPROFILE}${env:HOME}/opt/install/vcpkg",
+      "VCPKG_INSTALLED_DIR": "${env:USERPROFILE}${env:HOME}/opt/install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
-      "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
+      "VCPKG_TARGET_TRIPLET": "x64-windows"
     }
   },
   {
     "name": "vcpkg-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
-    "visualStudioArchitecture": "x64",
+    "visualStudio": "dd638741",
+    "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
       "C": "clang",
       "CXX": "clang++"
     },
     "environmentVariables": {
       "VCPKG_DISABLE_METRICS": "1",
-      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
+      "VCPKG_FORCE_SYSTEM_BINARIES": "1"
     },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_ROOT": "${env:USERPROFILE}${env:HOME}/opt/install/vcpkg",
+      "VCPKG_INSTALLED_DIR": "${env:USERPROFILE}${env:HOME}/opt/install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
-      "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
-    }
-  },
-  {
-    "name": "vcpkg-android",
-    "keep": true,
-    "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
-    "visualStudioArchitecture": "arm64",
-    "preferredGenerator": { "name": "Ninja" },
-    "environmentVariables": {
-      "VCPKG_DISABLE_METRICS": "1",
-      "VCPKG_FORCE_SYSTEM_BINARIES": "1" 
-    },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
-    "cmakeSettings": {
-      "CMAKE_INSTALL_BINDIR": "bin",
-      "CMAKE_INSTALL_LIBDIR": "lib",
-      "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_ROOT": "${env:USERPROFILE}${env:HOME}/opt/install/vcpkg",
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_HOST_TRIPLET": "arm64-windows",
-      "VCPKG_TARGET_TRIPLET": "arm64-android"
+      "VCPKG_TARGET_TRIPLET": "x64-windows"
     }
   },
   {
     "name": "qt-cl-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "environmentVariables": {
@@ -459,8 +451,6 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake;${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_arm64/lib/cmake",
-      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -468,7 +458,7 @@
     "name": "qt-cl-clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -487,8 +477,6 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake;${env:QT5_PATH}_arm64/lib/cmake;${env:QT6_PATH}_arm64/lib/cmake",
-      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -496,7 +484,7 @@
     "name": "qt-clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -515,8 +503,6 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/arm64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/arm64/lib/cmake;${env:QT5_PATH}_arm64/lib/cmake;${env:QT6_PATH}_arm64/lib/cmake",
-      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -524,7 +510,7 @@
     "name": "qt-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "environmentVariables": {
@@ -539,8 +525,6 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/x86_64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/x86_64/lib/cmake;${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake",
-      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -548,7 +532,7 @@
     "name": "qt-cl-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -567,8 +551,6 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/x86_64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/x86_64/lib/cmake;${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake",
-      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -576,7 +558,7 @@
     "name": "qt-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "e1eb8e8b",
+    "visualStudio": "dd638741",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -595,9 +577,90 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/x86_64",
       "CMAKE_MODULE_PATH": "${env:USERPROFILE}${env:HOME}/opt/install/x86_64/lib/cmake;${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake",
-      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
+    }
+  },
+  {
+    "name": "android-x86",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "dd638741",
+    "visualStudioArchitecture": "arm64",
+    "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
+    "environmentVariables": { },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/android-x86",
+      "ANDROID_ABI": "x86",
+      "ANDROID_HOME": "${env:ANDROID_HOME}",
+      "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
+      "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
+      "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}"
+    }
+  },
+  {
+    "name": "android-x86_64",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "dd638741",
+    "visualStudioArchitecture": "arm64",
+    "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
+    "environmentVariables": { },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/android-x86_64",
+      "ANDROID_ABI": "x86_64",
+      "ANDROID_HOME": "${env:ANDROID_HOME}",
+      "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
+      "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
+      "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}"
+    }
+  },
+  {
+    "name": "android-armeabi-v7a",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "dd638741",
+    "visualStudioArchitecture": "arm64",
+    "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
+    "environmentVariables": { },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/android-armeabi-v7a",
+      "ANDROID_ABI": "armeabi-v7a",
+      "ANDROID_HOME": "${env:ANDROID_HOME}",
+      "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
+      "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
+      "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}"
+    }
+  },
+  {
+    "name": "android-arm64-v8a",
+    "keep": true,
+    "isTrusted": true,
+    "visualStudio": "dd638741",
+    "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
+    "environmentVariables": { },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/android-arm64-v8a",
+      "ANDROID_ABI": "arm64-v8a",
+      "ANDROID_HOME": "${env:ANDROID_HOME}",
+      "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
+      "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
+      "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}"
     }
   },
   {
@@ -605,22 +668,22 @@
     "keep": true,
     "isTrusted": true,
     "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:QT5_PATH}/../android/lib/cmake/Qt5/Qt5Config.cmake",
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin"
     },
-    "toolchainFile": "${env:QT5_PATH}/../android/lib/cmake/Qt5/Qt5Config.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/android",
-      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
+      "ANDROID_HOME": "${env:ANDROID_HOME}",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
-      "ANDROID_NDK_ROOT": "${env:ANDROID_HOME}/ndk/26.1.10909125",
+      "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
+      "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
       "QT_HOST_PATH": "${env:QT5_PATH}_64",
       "QT_ANDROID_ABIS": "arm64-v8a;x86_64",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
@@ -631,21 +694,21 @@
     "keep": true,
     "isTrusted": true,
     "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:QT6_PATH}_arm64/../lib/cmake/Qt6/qt.toolchain.cmake",
     "environmentVariables": {
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT6_PATH}/bin"
     },
-    "toolchainFile": "${env:QT6_PATH}_arm64/../lib/cmake/Qt6/qt.toolchain.cmake",
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:USERPROFILE}${env:HOME}/opt/install/android",
-      "CMAKE_CXX_FLAGS_DEBUG_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
-      "CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT": "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG",
+      "ANDROID_HOME": "${env:ANDROID_HOME}",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
-      "ANDROID_NDK_ROOT": "${env:ANDROID_HOME}/ndk/26.1.10909125",
+      "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
+      "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
       "QT_HOST_PATH": "${env:QT6_PATH}_arm64",
       "QT_ANDROID_ABIS": "arm64-v8a;x86_64",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
