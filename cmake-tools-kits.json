@@ -14,8 +14,8 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake"
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake"
     }
   },
   {
@@ -33,8 +33,8 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake"
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake"
     }
   },
   {
@@ -52,8 +52,8 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake"
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake"
     }
   },
   {
@@ -71,7 +71,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86"
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}x86"
     }
   },
   {
@@ -89,7 +89,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86"
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}x86"
     }
   },
   {
@@ -107,7 +107,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86"
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}x86"
     }
   },
   {
@@ -125,7 +125,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86_64"
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}x86_64"
     }
   },
   {
@@ -143,7 +143,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86_64"
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}x86_64"
     }
   },
   {
@@ -161,7 +161,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86_64"
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}x86_64"
     }
   },
   {
@@ -170,14 +170,14 @@
     "isTrusted": true,
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "/usr/bin/aarch64-linux-gnu-gcc",
-      "CXX": "/usr/bin/aarch64-linux-gnu-g++"
+      "C": "${/}usr${/}bin${/}aarch64-linux-gnu-gcc",
+      "CXX": "${/}usr${/}bin${/}aarch64-linux-gnu-g++"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "/usr"
+      "CMAKE_INSTALL_PREFIX": "${/}usr"
     }
   },
   {
@@ -186,14 +186,14 @@
     "isTrusted": true,
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
-      "C": "/usr/bin/clang",
-      "CXX": "/usr/bin/clang++"
+      "C": "${/}usr${/}bin${/}clang",
+      "CXX": "${/}usr${/}bin${/}clang++"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/builds"
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}builds"
     }
   },
   {
@@ -206,10 +206,10 @@
       "CXX": "g++.exe"
     },
     "environmentVariables": {
-      "CMT_MINGW_PATH": "${env:MSYS64_PATH}/ucrt64/bin",
+      "CMT_MINGW_PATH": "${env:MSYS64_PATH}${/}ucrt64${/}bin",
       "MSYSTEM": "UCRT64",
-      "MSYSTEM_PREFIX": "/ucrt64",
-      "PATH": "${env:MSYS64_PATH}/ucrt64/bin;${env:MSYS64_PATH}/usr/bin;${env:PATH}"
+      "MSYSTEM_PREFIX": "${/}ucrt64",
+      "PATH": "${env:MSYS64_PATH}${/}ucrt64${/}bin;${env:MSYS64_PATH}${/}usr${/}bin;${env:PATH}"
     }
   },
   {
@@ -219,7 +219,7 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "toolchainFile": "${env:VCPKG_ROOT}${/}scripts${/}buildsystems${/}vcpkg.cmake",
     "compilers": {
       "C": "cl",
       "CXX": "cl"
@@ -232,9 +232,9 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_DIR": "${userHome}/opt/install",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake",
+      "VCPKG_INSTALLED_DIR": "${userHome}${/}opt${/}install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "arm64-windows"
@@ -247,7 +247,7 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "toolchainFile": "${env:VCPKG_ROOT}${/}scripts${/}buildsystems${/}vcpkg.cmake",
     "compilers": {
       "C": "clang-cl",
       "CXX": "clang-cl"
@@ -260,9 +260,9 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_DIR": "${userHome}/opt/install",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake",
+      "VCPKG_INSTALLED_DIR": "${userHome}${/}opt${/}install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "arm64-windows"
@@ -275,7 +275,7 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "toolchainFile": "${env:VCPKG_ROOT}${/}scripts${/}buildsystems${/}vcpkg.cmake",
     "compilers": {
       "C": "clang",
       "CXX": "clang++"
@@ -288,9 +288,9 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_DIR": "${userHome}/opt/install",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake",
+      "VCPKG_INSTALLED_DIR": "${userHome}${/}opt${/}install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "arm64-windows"
@@ -303,7 +303,7 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "toolchainFile": "${env:VCPKG_ROOT}${/}scripts${/}buildsystems${/}vcpkg.cmake",
     "compilers": {
       "C": "cl",
       "CXX": "cl"
@@ -316,9 +316,9 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_DIR": "${userHome}/opt/install",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake",
+      "VCPKG_INSTALLED_DIR": "${userHome}${/}opt${/}install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x86-windows"
@@ -331,7 +331,7 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "toolchainFile": "${env:VCPKG_ROOT}${/}scripts${/}buildsystems${/}vcpkg.cmake",
     "compilers": {
       "C": "clang-cl",
       "CXX": "clang-cl"
@@ -344,9 +344,9 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_DIR": "${userHome}/opt/install",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake",
+      "VCPKG_INSTALLED_DIR": "${userHome}${/}opt${/}install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x86-windows"
@@ -359,7 +359,7 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "toolchainFile": "${env:VCPKG_ROOT}${/}scripts${/}buildsystems${/}vcpkg.cmake",
     "compilers": {
       "C": "clang",
       "CXX": "clang++"
@@ -372,9 +372,9 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_DIR": "${userHome}/opt/install",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake",
+      "VCPKG_INSTALLED_DIR": "${userHome}${/}opt${/}install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x86-windows"
@@ -387,7 +387,7 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "toolchainFile": "${env:VCPKG_ROOT}${/}scripts${/}buildsystems${/}vcpkg.cmake",
     "compilers": {
       "C": "cl",
       "CXX": "cl"
@@ -400,9 +400,9 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_DIR": "${userHome}/opt/install",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake",
+      "VCPKG_INSTALLED_DIR": "${userHome}${/}opt${/}install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x64-windows"
@@ -415,7 +415,7 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "toolchainFile": "${env:VCPKG_ROOT}${/}scripts${/}buildsystems${/}vcpkg.cmake",
     "compilers": {
       "C": "clang-cl",
       "CXX": "clang-cl"
@@ -428,9 +428,9 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_DIR": "${userHome}/opt/install",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake",
+      "VCPKG_INSTALLED_DIR": "${userHome}${/}opt${/}install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x64-windows"
@@ -443,7 +443,7 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "toolchainFile": "${env:VCPKG_ROOT}${/}scripts${/}buildsystems${/}vcpkg.cmake",
     "compilers": {
       "C": "clang",
       "CXX": "clang++"
@@ -456,9 +456,9 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake",
-      "VCPKG_INSTALLED_DIR": "${userHome}/opt/install",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake",
+      "VCPKG_INSTALLED_DIR": "${userHome}${/}opt${/}install",
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x64-windows"
@@ -474,15 +474,15 @@
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_ARM64_PATH}",
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_arm64/bin;${env:QT6_PATH}_arm64/bin"
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}${/}lib${/}pkgconfig",
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}${/}bin;${env:QT5_PATH}_arm64${/}bin;${env:QT6_PATH}_arm64${/}bin"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake;${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_arm64/lib/cmake",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake;${env:QT5_PATH}_64${/}lib${/}cmake;${env:QT6_PATH}_arm64${/}lib${/}cmake",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -500,15 +500,15 @@
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_ARM64_PATH}",
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_arm64/bin;${env:QT6_PATH}_arm64/bin"
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}${/}lib${/}pkgconfig",
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}${/}bin;${env:QT5_PATH}_arm64${/}bin;${env:QT6_PATH}_arm64${/}bin"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake;${env:QT5_PATH}_arm64/lib/cmake;${env:QT6_PATH}_arm64/lib/cmake",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake;${env:QT5_PATH}_arm64${/}lib${/}cmake;${env:QT6_PATH}_arm64${/}lib${/}cmake",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -526,15 +526,15 @@
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_ARM64_PATH}",
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_arm64/bin;${env:QT6_PATH}_arm64/bin"
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}${/}lib${/}pkgconfig",
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}${/}bin;${env:QT5_PATH}_arm64${/}bin;${env:QT6_PATH}_arm64${/}bin"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/arm64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/arm64/lib/cmake;${env:QT5_PATH}_arm64/lib/cmake;${env:QT6_PATH}_arm64/lib/cmake",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}arm64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}arm64${/}lib${/}cmake;${env:QT5_PATH}_arm64${/}lib${/}cmake;${env:QT6_PATH}_arm64${/}lib${/}cmake",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -548,15 +548,15 @@
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin;${env:QT6_PATH}_64/bin"
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}${/}lib${/}pkgconfig",
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}${/}bin;${env:QT5_PATH}_64${/}bin;${env:QT6_PATH}_64${/}bin"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86_64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/x86_64/lib/cmake;${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}x86_64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}x86_64${/}lib${/}cmake;${env:QT5_PATH}_64${/}lib${/}cmake;${env:QT6_PATH}_64${/}lib${/}cmake",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -574,15 +574,15 @@
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin;${env:QT6_PATH}_64/bin"
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}${/}lib${/}pkgconfig",
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}${/}bin;${env:QT5_PATH}_64${/}bin;${env:QT6_PATH}_64${/}bin"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86_64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/x86_64/lib/cmake;${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}x86_64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}x86_64${/}lib${/}cmake;${env:QT5_PATH}_64${/}lib${/}cmake;${env:QT6_PATH}_64${/}lib${/}cmake",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -600,15 +600,15 @@
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin;${env:QT6_PATH}_64/bin"
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}${/}lib${/}pkgconfig",
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}${/}bin;${env:QT5_PATH}_64${/}bin;${env:QT6_PATH}_64${/}bin"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/x86_64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/install/x86_64/lib/cmake;${env:QT5_PATH}_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}x86_64",
+      "CMAKE_MODULE_PATH": "${userHome}${/}opt${/}install${/}x86_64${/}lib${/}cmake;${env:QT5_PATH}_64${/}lib${/}cmake;${env:QT6_PATH}_64${/}lib${/}cmake",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -619,13 +619,13 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
+    "toolchainFile": "${env:ANDROID_NDK_HOME}${/}build${/}cmake${/}android.toolchain.cmake",
     "environmentVariables": { },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/android-x86",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}android-x86",
       "ANDROID_ABI": "x86",
       "ANDROID_HOME": "${env:ANDROID_HOME}",
       "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
@@ -640,13 +640,13 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
+    "toolchainFile": "${env:ANDROID_NDK_HOME}${/}build${/}cmake${/}android.toolchain.cmake",
     "environmentVariables": { },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/android-x86_64",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}android-x86_64",
       "ANDROID_ABI": "x86_64",
       "ANDROID_HOME": "${env:ANDROID_HOME}",
       "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
@@ -661,13 +661,13 @@
     "visualStudio": "dd638741",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
+    "toolchainFile": "${env:ANDROID_NDK_HOME}${/}build${/}cmake${/}android.toolchain.cmake",
     "environmentVariables": { },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/android-armeabi-v7a",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}android-armeabi-v7a",
       "ANDROID_ABI": "armeabi-v7a",
       "ANDROID_HOME": "${env:ANDROID_HOME}",
       "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
@@ -681,13 +681,13 @@
     "isTrusted": true,
     "visualStudio": "dd638741",
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
+    "toolchainFile": "${env:ANDROID_NDK_HOME}${/}build${/}cmake${/}android.toolchain.cmake",
     "environmentVariables": { },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/android-arm64-v8a",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}android-arm64-v8a",
       "ANDROID_ABI": "arm64-v8a",
       "ANDROID_HOME": "${env:ANDROID_HOME}",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
@@ -700,18 +700,18 @@
     "keep": true,
     "isTrusted": true,
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:QT5_PATH}/../android/lib/cmake/Qt5/Qt5Config.cmake",
+    "toolchainFile": "${env:QT5_PATH}${/}..${/}android${/}lib${/}cmake${/}Qt5${/}Qt5Config.cmake",
     "environmentVariables": {
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT5_PATH}_64/bin"
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}${/}lib${/}pkgconfig",
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}${/}bin;${env:QT5_PATH}_64${/}bin"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/android",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}android",
       "ANDROID_HOME": "${env:ANDROID_HOME}",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
       "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
@@ -726,17 +726,17 @@
     "keep": true,
     "isTrusted": true,
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:QT6_PATH}_arm64/../lib/cmake/Qt6/qt.toolchain.cmake",
+    "toolchainFile": "${env:QT6_PATH}_arm64${/}..${/}lib${/}cmake${/}Qt6${/}qt.toolchain.cmake",
     "environmentVariables": {
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}${/}lib${/}pkgconfig",
       "VSCODE_QT_INSTALLATION": "${env:QT_ROOT}",
-      "PATH": "${env:PATH};${env:FFMPEG_PATH}/bin;${env:QT6_PATH}/bin"
+      "PATH": "${env:PATH};${env:FFMPEG_PATH}${/}bin;${env:QT6_PATH}${/}bin"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${userHome}/opt/install/android",
+      "CMAKE_INSTALL_PREFIX": "${userHome}${/}opt${/}install${/}android",
       "ANDROID_HOME": "${env:ANDROID_HOME}",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
       "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
