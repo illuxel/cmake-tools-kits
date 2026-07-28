@@ -510,7 +510,11 @@
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${userHome}/opt/aarch64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/aarch64/lib/cmake;${env:QT6_PATH}_arm64/lib/cmake;${env:QT5_PATH}_64/lib/cmake",
+      "CMAKE_MODULE_PATH": [
+        "${userHome}/opt/aarch64/lib/cmake",
+        "${env:QT6_PATH}_arm64/lib/cmake",
+        "${env:QT5_PATH}_64/lib/cmake"
+      ],
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -535,7 +539,11 @@
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${userHome}/opt/aarch64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/aarch64/lib/cmake;${env:QT6_PATH}_arm64/lib/cmake;${env:QT5_PATH}_64/lib/cmake",
+      "CMAKE_MODULE_PATH": [
+        "${userHome}/opt/aarch64/lib/cmake",
+        "${env:QT6_PATH}_arm64/lib/cmake",
+        "${env:QT5_PATH}_64/lib/cmake"
+      ],
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -548,7 +556,7 @@
     "preferredGenerator": { "name": "Ninja" },
     "environmentVariables": {
       "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig;${env:PKG_CONFIG_PATH}",
       "PATH": "${env:FFMPEG_PATH}/bin;${env:QT6_PATH}_64/bin;${env:QT5_PATH}_64/bin;${env:PATH}"
     },
     "cmakeSettings": {
@@ -556,7 +564,11 @@
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${userHome}/opt/x86_64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/x86_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake;${env:QT5_PATH}_64/lib/cmake",
+      "CMAKE_MODULE_PATH": [
+        "${userHome}/opt/x86_64/lib/cmake",
+        "${env:QT6_PATH}_64/lib/cmake",
+        "${env:QT5_PATH}_64/lib/cmake"
+      ],
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -581,7 +593,11 @@
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${userHome}/opt/x86_64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/x86_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake;${env:QT5_PATH}_64/lib/cmake",
+      "CMAKE_MODULE_PATH": [
+        "${userHome}/opt/x86_64/lib/cmake",
+        "${env:QT6_PATH}_64/lib/cmake",
+        "${env:QT5_PATH}_64/lib/cmake"
+      ],
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -606,7 +622,11 @@
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${userHome}/opt/x86_64",
-      "CMAKE_MODULE_PATH": "${userHome}/opt/x86_64/lib/cmake;${env:QT6_PATH}_64/lib/cmake;${env:QT5_PATH}_64/lib/cmake"
+      "CMAKE_MODULE_PATH": [
+        "${userHome}/opt/x86_64/lib/cmake",
+        "${env:QT6_PATH}_64/lib/cmake",
+        "${env:QT5_PATH}_64/lib/cmake"
+      ]
     }
   },
   {
