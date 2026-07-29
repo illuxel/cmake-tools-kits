@@ -3,7 +3,7 @@
     "name": "cl-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -22,7 +22,7 @@
     "name": "clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -41,7 +41,7 @@
     "name": "cl-clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -60,7 +60,7 @@
     "name": "cl-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -78,7 +78,7 @@
     "name": "clang-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -96,7 +96,7 @@
     "name": "cl-clang-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -114,7 +114,7 @@
     "name": "cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -132,7 +132,7 @@
     "name": "clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -150,7 +150,7 @@
     "name": "cl-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -197,13 +197,44 @@
     }
   },
   {
-    "name": "msys-ucrt64-x86_64-w64-mingw32",
+    "name": "msys-clangarm64",
+    "isTrusted": true,
+    "preferredGenerator": { "name": "MinGW Makefiles" },
+    "compilers": {
+      "C": "clang",
+      "CXX": "clang++"
+    },
+    "environmentVariables": {
+      "CMT_MINGW_PATH": "${env:MSYS64_PATH}/clangarm64/bin",
+      "MSYSTEM": "CLANGARM64",
+      "MSYSTEM_PREFIX": "/clangarm64",
+      "PATH": "${env:MSYS64_PATH}/clangarm64/bin;${env:MSYS64_PATH}/usr/bin;${env:PATH}"
+    }
+  },
+  {
+    "name": "msys-mingw64",
     "keep": true,
     "isTrusted": true,
     "preferredGenerator": { "name": "MinGW Makefiles" },
     "compilers": {
-      "C": "gcc.exe",
-      "CXX": "g++.exe"
+      "C": "gcc",
+      "CXX": "g++"
+    },
+    "environmentVariables": {
+      "CMT_MINGW_PATH": "${env:MSYS64_PATH}/mingw64/bin",
+      "MSYSTEM": "MINGW64",
+      "MSYSTEM_PREFIX": "/mingw64",
+      "PATH": "${env:MSYS64_PATH}/mingw64/bin;${env:MSYS64_PATH}/usr/bin;${env:PATH}"
+    }
+  },
+  {
+    "name": "msys-ucrt64",
+    "keep": true,
+    "isTrusted": true,
+    "preferredGenerator": { "name": "MinGW Makefiles" },
+    "compilers": {
+      "C": "gcc",
+      "CXX": "g++"
     },
     "environmentVariables": {
       "CMT_MINGW_PATH": "${env:MSYS64_PATH}/ucrt64/bin",
@@ -216,7 +247,7 @@
     "name": "vcpkg-cl-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -244,7 +275,7 @@
     "name": "vcpkg-cl-clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -272,7 +303,7 @@
     "name": "vcpkg-clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -300,7 +331,7 @@
     "name": "vcpkg-cl-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -328,7 +359,7 @@
     "name": "vcpkg-cl-clang-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -356,7 +387,7 @@
     "name": "vcpkg-clang-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -384,7 +415,7 @@
     "name": "vcpkg-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -412,7 +443,7 @@
     "name": "vcpkg-cl-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -440,7 +471,7 @@
     "name": "vcpkg-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
@@ -468,7 +499,7 @@
     "name": "qt-cl-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "environmentVariables": {
@@ -493,7 +524,7 @@
     "name": "qt-cl-clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -522,7 +553,7 @@
     "name": "qt-clang-arm64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -551,7 +582,7 @@
     "name": "qt-cl-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "environmentVariables": {
@@ -576,7 +607,7 @@
     "name": "qt-cl-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -605,7 +636,7 @@
     "name": "qt-clang-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "compilers": {
@@ -633,7 +664,7 @@
     "name": "android-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
@@ -652,7 +683,7 @@
     "name": "android-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
@@ -671,7 +702,7 @@
     "name": "android-armeabi-v7a",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
@@ -690,7 +721,7 @@
     "name": "android-arm64-v8a",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "dd638741",
+    "visualStudio": "1e6101ad",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
     "environmentVariables": { },
@@ -709,21 +740,34 @@
     "keep": true,
     "isTrusted": true,
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5/Qt5Config.cmake",
+    "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
     "environmentVariables": {
-      "FFMPEG_PATH": "${env:FFMPEG_X64_PATH}",
-      "PKG_CONFIG_PATH": "${env:FFMPEG_PATH}/lib/pkgconfig;${env:PKG_CONFIG_PATH}",
-      "PATH": "${env:FFMPEG_PATH}/bin;${env:QT5_ANDROID_PATH}/bin;${env:QT5_PATH}_64/bin;${env:PATH}"
+      "PATH": "${env:FFMPEG_ANDROID_PATH}/bin;${env:QT5_ANDROID_PATH}/bin;${env:QT5_PATH}_64/bin;${env:PATH}",
+      "PKG_CONFIG_PATH": "${env:FFMPEG_ANDROID_PATH}/lib/pkgconfig;${env:QT5_ANDROID_PATH}/lib/pkgconfig;${env:PKG_CONFIG_PATH}"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${userHome}/opt/android",
+      "CMAKE_MODULE_PATH": [ "${workspaceRoot}/cmake", "${env:QT5_ANDROID_PATH}/lib/cmake" ],
+      "ANDROID_ABI": "arm64-v8a",
+      "ANDROID_SDK": "${env:ANDROID_HOME}",
+      "ANDROID_NDK": "${env:ANDROID_NDK_HOME}",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
       "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
+      "Qt_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5",
+      "Qt5_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5",
+      "Qt5OpenGL_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5OpenGL",
+      "Qt5Svg_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5Svg",
+      "Qt5Core_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5Core",
+      "Qt5Network_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5Network",
+      "Qt5Gui_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5Gui",
+      "Qt5Widgets_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5Widgets",
+      "Qt5LinguistTools_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5LinguistTools",
+      "Qt5AndroidExtras_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5AndroidExtras",
       "QT_HOST_PATH": "${env:QT5_PATH}_64",
-      "QT_ANDROID_ABIS": "arm64-v8a;x86_64",
+      "QT_ANDROID_ABIS": [ "arm64-v8a" ],
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   },
@@ -732,10 +776,10 @@
     "keep": true,
     "isTrusted": true,
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:QT6_ANDROID_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
+    "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
     "environmentVariables": {
-      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_PATH}/lib/pkgconfig",
-      "PATH": "${env:FFMPEG_PATH}/bin;${env:QT6_ANDROID_PATH}/bin;${env:PATH}"
+      "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_ANDROID_PATH}/lib/pkgconfig",
+      "PATH": "${env:FFMPEG_ANDROID_PATH}/bin;${env:QT6_ANDROID_PATH}/bin;${env:PATH}"
     },
     "cmakeSettings": {
       "CMAKE_INSTALL_BINDIR": "bin",
@@ -745,7 +789,17 @@
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
       "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
       "QT_HOST_PATH": "${env:QT6_PATH}_arm64",
-      "QT_ANDROID_ABIS": "arm64-v8a;x86_64;x86",
+      "QT_ANDROID_ABIS": [ "arm64-v8a" ],
+      "Qt_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6",
+      "Qt6_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6",
+      "Qt6OpenGL_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6OpenGL",
+      "Qt6Svg_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6Svg",
+      "Qt6Core_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6Core",
+      "Qt6Network_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6Network",
+      "Qt6Gui_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6Gui",
+      "Qt6Widgets_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6Widgets",
+      "Qt6LinguistTools_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6LinguistTools",
+      "Qt6AndroidExtras_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6AndroidExtras",
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
   }
