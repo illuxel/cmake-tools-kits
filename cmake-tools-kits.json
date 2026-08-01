@@ -38,7 +38,7 @@
     }
   },
   {
-    "name": "cl-clang-arm64",
+    "name": "clang-cl-arm64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
@@ -93,7 +93,7 @@
     }
   },
   {
-    "name": "cl-clang-x86",
+    "name": "clang-cl-x86",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
@@ -147,7 +147,7 @@
     }
   },
   {
-    "name": "cl-clang-x86_64",
+    "name": "clang-cl-x86_64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
@@ -290,7 +290,7 @@
     }
   },
   {
-    "name": "vcpkg-cl-clang-arm64",
+    "name": "vcpkg-clang-cl-arm64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
@@ -374,7 +374,7 @@
     }
   },
   {
-    "name": "vcpkg-cl-clang-x86",
+    "name": "vcpkg-clang-cl-x86",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
@@ -458,7 +458,7 @@
     }
   },
   {
-    "name": "vcpkg-cl-clang-x86_64",
+    "name": "vcpkg-clang-cl-x86_64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
@@ -539,7 +539,7 @@
     }
   },
   {
-    "name": "qt-cl-clang-arm64",
+    "name": "qt-clang-cl-arm64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
@@ -622,7 +622,7 @@
     }
   },
   {
-    "name": "qt-cl-clang-x86_64",
+    "name": "qt-clang-cl-x86_64",
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
