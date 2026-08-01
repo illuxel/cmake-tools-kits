@@ -201,8 +201,8 @@
     "isTrusted": true,
     "preferredGenerator": { "name": "MinGW Makefiles" },
     "compilers": {
-      "C": "clang",
-      "CXX": "clang++"
+      "C": "${env:MSYS64_PATH}/clangarm64/bin/clang.exe",
+      "CXX": "${env:MSYS64_PATH}/clangarm64/bin/clang++.exe"
     },
     "environmentVariables": {
       "CMT_MINGW_PATH": "${env:MSYS64_PATH}/clangarm64/bin",
@@ -217,8 +217,8 @@
     "isTrusted": true,
     "preferredGenerator": { "name": "MinGW Makefiles" },
     "compilers": {
-      "C": "gcc",
-      "CXX": "g++"
+      "C": "${env:MSYS64_PATH}/mingw64/bin/gcc.exe",
+      "CXX": "${env:MSYS64_PATH}/mingw64/bin/g++.exe"
     },
     "environmentVariables": {
       "CMT_MINGW_PATH": "${env:MSYS64_PATH}/mingw64/bin",
@@ -233,8 +233,8 @@
     "isTrusted": true,
     "preferredGenerator": { "name": "MinGW Makefiles" },
     "compilers": {
-      "C": "gcc",
-      "CXX": "g++"
+      "C": "${env:MSYS64_PATH}/ucrt64/bin/gcc.exe",
+      "CXX": "${env:MSYS64_PATH}/ucrt64/bin/g++.exe"
     },
     "environmentVariables": {
       "CMT_MINGW_PATH": "${env:MSYS64_PATH}/ucrt64/bin",
