@@ -351,9 +351,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
-      "VCPKG_INSTALLED_DIR": "${env:HOME}${env:USERPROFILE}/opt/install/install",
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_HOST_TRIPLET": "arm64-windows",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_TARGET_TRIPLET": "arm64-windows"
     }
   },
@@ -379,9 +377,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
-      "VCPKG_INSTALLED_DIR": "${env:HOME}${env:USERPROFILE}/opt/install/install",
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_HOST_TRIPLET": "arm64-windows",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_TARGET_TRIPLET": "arm64-windows"
     }
   },
@@ -407,9 +403,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
-      "VCPKG_INSTALLED_DIR": "${env:HOME}${env:USERPROFILE}/opt/install/install",
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_HOST_TRIPLET": "arm64-windows",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_TARGET_TRIPLET": "arm64-windows"
     }
   },
@@ -435,9 +429,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
-      "VCPKG_INSTALLED_DIR": "${env:HOME}${env:USERPROFILE}/opt/install/install",
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_HOST_TRIPLET": "arm64-windows",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_TARGET_TRIPLET": "x86-windows"
     }
   },
@@ -463,9 +455,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
-      "VCPKG_INSTALLED_DIR": "${env:HOME}${env:USERPROFILE}/opt/install/install",
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_HOST_TRIPLET": "arm64-windows",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_TARGET_TRIPLET": "x86-windows"
     }
   },
@@ -491,9 +481,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
-      "VCPKG_INSTALLED_DIR": "${env:HOME}${env:USERPROFILE}/opt/install/install",
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_HOST_TRIPLET": "arm64-windows",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_TARGET_TRIPLET": "x86-windows"
     }
   },
@@ -519,9 +507,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
-      "VCPKG_INSTALLED_DIR": "${env:HOME}${env:USERPROFILE}/opt/install/install",
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_HOST_TRIPLET": "arm64-windows",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_TARGET_TRIPLET": "x64-windows"
     }
   },
@@ -547,9 +533,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
-      "VCPKG_INSTALLED_DIR": "${env:HOME}${env:USERPROFILE}/opt/install/install",
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_HOST_TRIPLET": "arm64-windows",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_TARGET_TRIPLET": "x64-windows"
     }
   },
@@ -575,9 +559,7 @@
       "CMAKE_INSTALL_INCLUDEDIR": "include",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
-      "VCPKG_INSTALLED_DIR": "${env:HOME}${env:USERPROFILE}/opt/install/install",
-      "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_HOST_TRIPLET": "arm64-windows",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_TARGET_TRIPLET": "x64-windows"
     }
   },
@@ -596,9 +578,10 @@
       "ANDROID_ABI": "x86",
       "ANDROID_HOME": "${env:ANDROID_HOME}",
       "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
+      "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "x86-android",
       "VCPKG_TARGET_TRIPLET": "x86-android",
-      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_CHAINLOAD_TOOLCHAIN_FILE": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
     }
   },
@@ -619,7 +602,7 @@
       "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
       "VCPKG_HOST_TRIPLET": "x64-android",
       "VCPKG_TARGET_TRIPLET": "x64-android",
-      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_CHAINLOAD_TOOLCHAIN_FILE": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
     }
   },
@@ -638,9 +621,10 @@
       "ANDROID_ABI": "armeabi-v7a",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
       "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
+      "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm-android",
       "VCPKG_TARGET_TRIPLET": "arm-android",
-      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_CHAINLOAD_TOOLCHAIN_FILE": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
     }
   },
@@ -659,9 +643,10 @@
       "ANDROID_ABI": "arm64-v8a",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
       "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
+      "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-android",
       "VCPKG_TARGET_TRIPLET": "arm64-android",
-      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_CHAINLOAD_TOOLCHAIN_FILE": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
     }
   },
