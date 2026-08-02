@@ -350,7 +350,7 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
-    "visualStudioArchitecture": "arm64",
+    "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
@@ -378,7 +378,7 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
-    "visualStudioArchitecture": "arm64",
+    "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
@@ -406,7 +406,7 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
-    "visualStudioArchitecture": "arm64",
+    "visualStudioArchitecture": "x86",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
@@ -434,7 +434,7 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
-    "visualStudioArchitecture": "arm64",
+    "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
@@ -462,7 +462,7 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
-    "visualStudioArchitecture": "arm64",
+    "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
@@ -490,7 +490,7 @@
     "keep": true,
     "isTrusted": true,
     "visualStudio": "1e6101ad",
-    "visualStudioArchitecture": "arm64",
+    "visualStudioArchitecture": "x64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
     "compilers": {
@@ -511,6 +511,90 @@
       "VCPKG_BUILD_TYPE": "release",
       "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "x64-windows"
+    }
+  },
+  {
+    "name": "vcpkg-android-x86",
+    "keep": true,
+    "isTrusted": true,
+    "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "environmentVariables": { },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-x86",
+      "ANDROID_ABI": "x86",
+      "ANDROID_HOME": "${env:ANDROID_HOME}",
+      "ANDROID_NDK_HOME": "${env:ANDROID_NDK_HOME}",
+      "VCPKG_HOST_TRIPLET": "x86-android",
+      "VCPKG_TARGET_TRIPLET": "x86-android",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed",
+      "VCPKG_CHAINLOAD_TOOLCHAIN_FILE": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
+    }
+  },
+  {
+    "name": "vcpkg-android-x86_64",
+    "keep": true,
+    "isTrusted": true,
+    "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "environmentVariables": { },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-x86_64",
+      "ANDROID_ABI": "x86_64",
+      "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
+      "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
+      "VCPKG_HOST_TRIPLET": "x64-android",
+      "VCPKG_TARGET_TRIPLET": "x64-android",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed",
+      "VCPKG_CHAINLOAD_TOOLCHAIN_FILE": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
+    }
+  },
+  {
+    "name": "vcpkg-android-armeabi-v7a",
+    "keep": true,
+    "isTrusted": true,
+    "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "environmentVariables": { },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-armeabi-v7a",
+      "ANDROID_ABI": "armeabi-v7a",
+      "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
+      "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
+      "VCPKG_HOST_TRIPLET": "arm-android",
+      "VCPKG_TARGET_TRIPLET": "arm-android",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed",
+      "VCPKG_CHAINLOAD_TOOLCHAIN_FILE": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
+    }
+  },
+  {
+    "name": "vcpkg-android-arm64-v8a",
+    "keep": true,
+    "isTrusted": true,
+    "preferredGenerator": { "name": "Ninja" },
+    "toolchainFile": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+    "environmentVariables": { },
+    "cmakeSettings": {
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-arm64-v8a",
+      "ANDROID_ABI": "arm64-v8a",
+      "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
+      "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
+      "VCPKG_HOST_TRIPLET": "arm64-android",
+      "VCPKG_TARGET_TRIPLET": "arm64-android",
+      "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed",
+      "VCPKG_CHAINLOAD_TOOLCHAIN_FILE": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
     }
   },
   {
@@ -682,8 +766,6 @@
     "name": "android-x86",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "1e6101ad",
-    "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
     "environmentVariables": { },
@@ -701,8 +783,6 @@
     "name": "android-x86_64",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "1e6101ad",
-    "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
     "environmentVariables": { },
@@ -720,8 +800,6 @@
     "name": "android-armeabi-v7a",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "1e6101ad",
-    "visualStudioArchitecture": "arm64",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
     "environmentVariables": { },
@@ -739,7 +817,6 @@
     "name": "android-arm64-v8a",
     "keep": true,
     "isTrusted": true,
-    "visualStudio": "1e6101ad",
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
     "environmentVariables": { },
