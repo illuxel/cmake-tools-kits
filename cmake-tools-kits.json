@@ -644,7 +644,7 @@
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
       "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
       "VCPKG_BUILD_TYPE": "release",
-      "VCPKG_HOST_TRIPLET": "arm64-android",
+      "VCPKG_HOST_TRIPLET": "arm64-windows",
       "VCPKG_TARGET_TRIPLET": "arm64-android",
       "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
       "VCPKG_CHAINLOAD_TOOLCHAIN_FILE": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
@@ -752,8 +752,8 @@
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64",
       "CMAKE_MODULE_PATH": [
         "${env:HOME}${env:USERPROFILE}/opt/install/x86_64/lib/cmake",
-        "${env:QT6_PATH}_64/lib/cmake",
-        "${env:QT5_PATH}_64/lib/cmake"
+        "${env:QT5_PATH}_64/lib/cmake",
+        "${env:QT6_PATH}_64/lib/cmake"
       ],
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
@@ -781,8 +781,8 @@
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64",
       "CMAKE_MODULE_PATH": [
         "${env:HOME}${env:USERPROFILE}/opt/install/x86_64/lib/cmake",
-        "${env:QT6_PATH}_64/lib/cmake",
-        "${env:QT5_PATH}_64/lib/cmake"
+        "${env:QT5_PATH}_64/lib/cmake",
+        "${env:QT6_PATH}_64/lib/cmake"
       ],
       "QT_QML_GENERATE_QMLLS_INI": "ON"
     }
@@ -810,8 +810,8 @@
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64",
       "CMAKE_MODULE_PATH": [
         "${env:HOME}${env:USERPROFILE}/opt/install/x86_64/lib/cmake",
-        "${env:QT6_PATH}_64/lib/cmake",
-        "${env:QT5_PATH}_64/lib/cmake"
+        "${env:QT5_PATH}_64/lib/cmake",
+        "${env:QT6_PATH}_64/lib/cmake"
       ]
     }
   },
@@ -822,15 +822,12 @@
     "preferredGenerator": { "name": "Ninja" },
     "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
     "environmentVariables": {
+      "VULKAN_SDK": "",
+      "VK_SDK_PATH": "",
       "PATH": "${env:FFMPEG_ANDROID_PATH}/bin;${env:QT5_ANDROID_PATH}/bin;${env:QT5_PATH}_64/bin;${env:PATH}",
       "PKG_CONFIG_PATH": "${env:FFMPEG_ANDROID_PATH}/lib/pkgconfig;${env:QT5_ANDROID_PATH}/lib/pkgconfig;${env:PKG_CONFIG_PATH}"
     },
     "cmakeSettings": {
-      "CMAKE_INSTALL_BINDIR": "bin",
-      "CMAKE_INSTALL_LIBDIR": "lib",
-      "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android",
-      "CMAKE_MODULE_PATH": [ "${workspaceRoot}/cmake", "${env:QT5_ANDROID_PATH}/lib/cmake" ],
       "ANDROID_ABI": "arm64-v8a",
       "ANDROID_SDK": "${env:ANDROID_HOME}",
       "ANDROID_NDK": "${env:ANDROID_NDK_HOME}",
@@ -848,7 +845,15 @@
       "Qt5AndroidExtras_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt5AndroidExtras",
       "QT_HOST_PATH": "${env:QT5_PATH}_64",
       "QT_ANDROID_ABIS": [ "arm64-v8a" ],
-      "QT_QML_GENERATE_QMLLS_INI": "ON"
+      "QT_QML_GENERATE_QMLLS_INI": "ON",
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_SYSTEM_VERSION": "31",
+      "CMAKE_MODULE_PATH": [
+        "${workspaceRoot}/cmake",
+        "${env:QT5_ANDROID_PATH}/lib/cmake"
+      ]
     }
   },
   {
@@ -856,31 +861,27 @@
     "keep": true,
     "isTrusted": true,
     "preferredGenerator": { "name": "Ninja" },
-    "toolchainFile": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
+    "toolchainFile": "${env:QT6_ANDROID_PATH}/lib/cmake/Qt6/qt.toolchain.cmake",
     "environmentVariables": {
+      "VULKAN_SDK": "",
+      "VK_SDK_PATH": "",
       "PKG_CONFIG_PATH": "${env:PKG_CONFIG_PATH};${env:FFMPEG_ANDROID_PATH}/lib/pkgconfig",
-      "PATH": "${env:FFMPEG_ANDROID_PATH}/bin;${env:QT6_ANDROID_PATH}/bin;${env:PATH}"
+      "PATH": "${env:FFMPEG_ANDROID_PATH}/bin;${env:QT6_ANDROID_PATH}/bin${env:PATH}"
     },
     "cmakeSettings": {
-      "CMAKE_INSTALL_BINDIR": "bin",
-      "CMAKE_INSTALL_LIBDIR": "lib",
-      "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
       "ANDROID_NDK_ROOT": "${env:ANDROID_NDK_HOME}",
       "QT_HOST_PATH": "${env:QT6_PATH}_arm64",
       "QT_ANDROID_ABIS": [ "arm64-v8a" ],
-      "Qt_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6",
-      "Qt6_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6",
-      "Qt6OpenGL_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6OpenGL",
-      "Qt6Svg_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6Svg",
-      "Qt6Core_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6Core",
-      "Qt6Network_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6Network",
-      "Qt6Gui_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6Gui",
-      "Qt6Widgets_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6Widgets",
-      "Qt6LinguistTools_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6LinguistTools",
-      "Qt6AndroidExtras_DIR": "${env:QT5_ANDROID_PATH}/lib/cmake/Qt6AndroidExtras",
-      "QT_QML_GENERATE_QMLLS_INI": "ON"
+      "QT_QML_GENERATE_QMLLS_INI": "ON",
+      "CMAKE_INSTALL_BINDIR": "bin",
+      "CMAKE_INSTALL_LIBDIR": "lib",
+      "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_SYSTEM_VERSION": "37.1",
+      "CMAKE_MODULE_PATH": [
+        "${workspaceRoot}/cmake",
+        "${env:QT6_ANDROID_PATH}/lib/cmake"
+      ]
     }
   }
 ]
