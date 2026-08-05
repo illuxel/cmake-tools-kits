@@ -266,6 +266,7 @@
   },
   {
     "name": "msys-clangarm64",
+    "keep": true,
     "isTrusted": true,
     "preferredGenerator": { "name": "MinGW Makefiles" },
     "compilers": {
