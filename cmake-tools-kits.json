@@ -14,6 +14,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ]
     }
@@ -33,6 +34,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ]
     }
@@ -52,6 +54,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ]
     }
@@ -71,6 +74,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86"
     }
   },
@@ -89,6 +93,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86"
     }
   },
@@ -107,6 +112,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86"
     }
   },
@@ -125,6 +131,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64"
     }
   },
@@ -143,6 +150,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64"
     }
   },
@@ -161,6 +169,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64"
     }
   },
@@ -177,7 +186,8 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "/usr"
+      "CMAKE_INSTALL_DATADIR": "share",
+      "CMAKE_INSTALL_PREFIX": "${workspaceFolder}/build/install"
     }
   },
   {
@@ -193,7 +203,8 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
-      "CMAKE_INSTALL_PREFIX": "/usr"
+      "CMAKE_INSTALL_DATADIR": "share",
+      "CMAKE_INSTALL_PREFIX": "${workspaceFolder}/build/install"
     }
   },
   {
@@ -207,6 +218,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-x86",
       "ANDROID_ABI": "x86",
       "ANDROID_HOME": "${env:ANDROID_HOME}",
@@ -224,6 +236,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-x86_64",
       "ANDROID_ABI": "x86_64",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
@@ -241,6 +254,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-armeabi-v7a",
       "ANDROID_ABI": "armeabi-v7a",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
@@ -258,6 +272,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-arm64-v8a",
       "ANDROID_ABI": "arm64-v8a",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
@@ -283,6 +298,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64"
     }
   },
@@ -305,6 +321,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64"
     }
   },
@@ -327,6 +344,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64"
     }
   },
@@ -350,6 +368,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
       "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
@@ -376,6 +395,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
       "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
@@ -402,6 +422,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
       "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
@@ -428,6 +449,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
       "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
@@ -454,6 +476,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
       "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
@@ -480,6 +503,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
       "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
@@ -506,6 +530,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
       "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
@@ -532,6 +557,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
       "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
@@ -558,6 +584,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [ "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake" ],
       "VCPKG_INSTALLED_DIR": "${env:VCPKG_ROOT}/installed/manifest",
@@ -575,6 +602,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-x86",
       "ANDROID_ABI": "x86",
       "ANDROID_HOME": "${env:ANDROID_HOME}",
@@ -597,6 +625,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-x86_64",
       "ANDROID_ABI": "x86_64",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
@@ -618,6 +647,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-armeabi-v7a",
       "ANDROID_ABI": "armeabi-v7a",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
@@ -640,6 +670,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/android-arm64-v8a",
       "ANDROID_ABI": "arm64-v8a",
       "ANDROID_SDK_ROOT": "${env:ANDROID_HOME}",
@@ -667,6 +698,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [
         "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake",
@@ -696,6 +728,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [
         "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake",
@@ -725,6 +758,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/aarch64",
       "CMAKE_MODULE_PATH": [
         "${env:HOME}${env:USERPROFILE}/opt/install/aarch64/lib/cmake",
@@ -750,6 +784,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64",
       "CMAKE_MODULE_PATH": [
         "${env:HOME}${env:USERPROFILE}/opt/install/x86_64/lib/cmake",
@@ -779,6 +814,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64",
       "CMAKE_MODULE_PATH": [
         "${env:HOME}${env:USERPROFILE}/opt/install/x86_64/lib/cmake",
@@ -808,6 +844,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_INSTALL_PREFIX": "${env:HOME}${env:USERPROFILE}/opt/install/x86_64",
       "CMAKE_MODULE_PATH": [
         "${env:HOME}${env:USERPROFILE}/opt/install/x86_64/lib/cmake",
@@ -851,6 +888,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_SYSTEM_VERSION": "28",
       "CMAKE_MODULE_PATH": [
         "${workspaceRoot}/cmake",
@@ -881,6 +919,7 @@
       "CMAKE_INSTALL_BINDIR": "bin",
       "CMAKE_INSTALL_LIBDIR": "lib",
       "CMAKE_INSTALL_INCLUDEDIR": "include",
+      "CMAKE_INSTALL_DATADIR": "share",
       "CMAKE_SYSTEM_VERSION": "37",
       "CMAKE_MODULE_PATH": [
         "${workspaceRoot}/cmake",
